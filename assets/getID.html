@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <title>Soundcloud ID extractor</title>
+    <style>
+        * {
+            border: none;
+            font-size: 20px;
+        }
+        body {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: sans-serif;
+        }
+        #container {
+            background-color: #333333;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        #code-field {
+            height: 50px;
+            width: 200px;
+            padding: 0px;
+        }
+        #submit {
+            height: 50px;
+            width: 100px;
+        }
+        #result {
+            height: 50px;
+            text-align: center;
+            font-size: 50px;
+            font-family: monospace;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input type="text" id="code-field">
+        <button id="submit" onclick="getID();">Submit</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        let regex = new RegExp('api.soundcloud.com/tracks/(.*)&color=');
+        function getID() {
+            document.getElementById('result').innerHTML = document.getElementById('code-field').value.match(regex)[1];
+        }
+    </script>
+</body>
