@@ -92,7 +92,11 @@ h1, h2 {
             cursor: pointer;
         }
         li:hover {
-            color: #cccccc;
+            color: #ffffff;
+        }
+        .genre-selected {
+            background-color: #333333;
+            color: #ffffff;
         }
     }
 

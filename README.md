@@ -13,11 +13,11 @@ Each DJ's data should be of the form as follows:
         'genres': [         // list of genres:
             'GENRE 1',          // make sure they are spelt the same as any
             'GENRE 2',          // existing genres, otherwise they will appear as
-            'GENRE 3'           // in the dropdown different options
+            'GENRE 3'           // different options in the dropdown
         ],
         'music': [          // any mixes or tracks that need to be shown for the DJ
-            ['soundcloud', 'SOUNDCLOUD ID'],    // make sure to include the platform
-            ['mixcloud', 'MIXCLOUD/ID']       // as well as the ID
+            ['soundcloud', 'SOUNDCLOUD ID'],
+            ['mixcloud', 'MIXCLOUD/ID']
         ]
     }
 ```

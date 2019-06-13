@@ -1,9 +1,11 @@
 let djNames = shuffle(Object.keys(djs));
 let genres = [];
 let list = $('#dj-list');
+let selected = 'all';
+
 for (let i of djNames) {
     let dj = djs[i];
-    list.append('<div class="dj-card"><div class="row"><div class="col-md-3 dj-img"><img></div><div class="col-md-8 dj-content"><h3></h3><div class="dj-bio"><p></p></div><ul class="genre-list"></ul></div><div class="col-md-1"><img src="assets/dropdown.svg" class="music-expand" onclick="toggleMusic(this)"></div></div><div class="dj-music-container"><div class="dj-music"></div></div></div>');
+    list.append('<div class="dj-card"><div class="row"><div class="col-md-3 dj-img"><img></div><div class="col-md-8 dj-content"><h3></h3><div class="dj-bio"><p></p></div><ul class="genre-list"></ul></div><div class="col-md-1 dropdown-container"><img src="assets/dropdown.svg" class="music-expand" onclick="toggleMusic(this)"></div></div><div class="dj-music-container"><div class="dj-music"></div></div></div>');
     let card = $('#dj-list .dj-card:last-child');
     dj.card = card;
     card.find('.dj-content h3').html(i);
@@ -19,15 +21,22 @@ for (let i of djNames) {
     }
 
     let musicDiv = card.find('dj-music');
-    for (j of dj.music) {
-        if (j[0] == 'mixcloud') {
-            card.find('.dj-music').append('<iframe height="120" scrolling="no" frameborder="0" source="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=' + j[1] + '">Loading...</iframe>');
-        }
-        else if (j[0] == 'soundcloud') {
-            card.find('.dj-music').append('<iframe height="120" scrolling="no" frameborder="no" allow="autoplay" source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/' + j[1] + '&color=%23a32691&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Loading...</iframe>')
-        }
+    if (dj.music.length === 0) {
+        card.find('.dropdown-container').remove();
+        card.find('.dj-content').attr('class', 'col-md-9 dj-content');
+        musicDiv.remove();
     }
-    musicDiv.css('margin-top', '-' + musicDiv.outerHeight() + 'px');
+    else {
+        for (j of dj.music) {
+            if (j[0] == 'mixcloud') {
+                card.find('.dj-music').append('<iframe height="120" scrolling="no" frameborder="0" source="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=' + j[1] + '">Loading...</iframe>');
+            }
+            else if (j[0] == 'soundcloud') {
+                card.find('.dj-music').append('<iframe height="120" scrolling="no" frameborder="no" allow="autoplay" source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/' + j[1] + '&color=%23a32691&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Loading...</iframe>')
+            }
+        }
+        musicDiv.css('margin-top', '-' + musicDiv.outerHeight() + 'px');
+    }
 }
 
 window.onload = () => {
@@ -72,9 +81,22 @@ function toggleMusic(elem) {
  * @param {string} value the genre to filter DJs by (as written in the genre lists)
  */
 function filterGenres(value) {
+    if (value !== 'all' && value === selected) {
+        filterGenres('all');
+        return;
+    }
+    else {
+        selected = value;
+    }
+
     $('#genre-filter').val(value);
     if (value === 'all') {
         for (let i of djNames) {
+            djs[i].card.find('li').each((index, elem) => {
+                elem = $(elem);
+                elem.removeClass('genre-selected');
+            });
+
             djs[i].card.show();
         }
     }
@@ -83,8 +105,22 @@ function filterGenres(value) {
             let dj = djs[i];
             if (!dj.genres.includes(value)) {
                 dj.card.hide();
+                
+                dj.card.find('li').each((index, elem) => {
+                    elem = $(elem);
+                    elem.removeClass('genre-selected');
+                });
             }
             else {
+                dj.card.find('li').each((index, elem) => {
+                    elem = $(elem);
+                    if (elem.text() === value) {
+                        elem.addClass('genre-selected');
+                    }
+                    else {
+                        elem.removeClass('genre-selected');
+                    }
+                });
                 dj.card.show();
             }
         }

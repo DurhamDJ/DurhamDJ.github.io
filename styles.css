@@ -110,7 +110,12 @@ h1, h2 {
 }
 
 .dj-card .genre-list li:hover {
-  color: #cccccc;
+  color: #ffffff;
+}
+
+.dj-card .genre-list .genre-selected {
+  background-color: #333333;
+  color: #ffffff;
 }
 
 .dj-card .dj-content {
