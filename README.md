@@ -2,7 +2,7 @@
 Durham DJ Society Website
 
 ## Updating DJ Info
-Data containing the bios, mixes etc of DJs is stored in `assets/djs.js`.
+Data containing the bios, mixes etc of DJs is stored in `DJs.js`.
 
 Each DJ's data should be of the form as follows:
 
