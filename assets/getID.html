@@ -25,9 +25,9 @@
             border-radius: 5px;
         }
         #code-field {
-            height: 50px;
+            height: 40px;
             width: 200px;
-            padding: 0px;
+            padding: 5px;
         }
         #submit {
             height: 50px;
@@ -44,9 +44,9 @@
 </head>
 <body>
     <div id="container">
-        <input type="text" id="code-field">
+        <input type="text" id="code-field" placeholder="Paste code here">
         <button id="submit" onclick="getID();">Submit</button>
-        <div id="result"></div>
+        <div id="result">No ID</div>
     </div>
     <script>
         let regex = new RegExp('api.soundcloud.com/tracks/(.*)&color=');
