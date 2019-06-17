@@ -1,10 +1,9 @@
 let djs = {
     'DJ Khanage': {
         'bio': 'Worst DJ in Duz init, fuck Khanage',
-        'img': 'assets/djimg/KHALED.jpg',
+        'img': 'assets/djimg/khanage.jpg',
         'genres': [
-            'memes',
-            'loud shouting'
+            'drum and bass'
         ],
         'music': [
             ['soundcloud', '160992638']
