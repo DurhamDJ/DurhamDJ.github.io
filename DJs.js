@@ -1,4 +1,16 @@
 let djs = {
+    'DJ Khanage': {
+        'bio': 'Worst DJ in Duz init, fuck Khanage',
+        'img': 'assets/djimg/KHALED.jpg',
+        'genres': [
+            'memes',
+            'loud shouting'
+        ],
+        'music': [
+            ['soundcloud', '160992638']
+        ]
+    },
+    
     'DJ Khaled': {
         'bio': '<span class="khaled-deep-quote">"The price of fame, shit real. Fuck fame (man fuck this shit). Fuck the game."</span>  ~ DJ Khaled',
         'img': 'assets/djimg/KHALED.jpg',
