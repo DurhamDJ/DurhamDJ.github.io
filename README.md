@@ -8,7 +8,7 @@ Each DJ's data should be of the form as follows:
 
 ```js
     'DJ NAME': {        // name of DJ
-        'bio': 'DJ BIO',                // DJ biography
+        'bio': 'DJ BIO',                // DJ biography: SEE BELOW if it gets too long to fit on your screen
         'img': 'PATH/TO/DJ_IMAGE.JPG',  // path to DJ photo (preferably in assets/djimg)
         'genres': [         // list of genres:
             'GENRE 1',          // make sure they are spelt the same as any
@@ -28,6 +28,17 @@ This data is stored as a JavaScript structure. That means that:
 * `[]` denotes an array (a list of values)
 
 Bear in mind that both of these require commas after every element inside them except the last item. If you forget to add commas, the code will break.
+
+## Long bios
+If a bio is too long to fit on a screen, you can split it across multiple lines to make it more legible. In order to do this:
+* Insert a backslash (`\`) where you want to start a new line
+* Put in a new line directly after the backslash
+
+You should end up with something like this:
+```js
+'bio': 'This is a pretty long biography,\
+        but you can split it like this.'
+```
 
 ## Getting Mixcloud / Soundcloud IDs
 In order to add mixes or tracks to a DJ's information, you need to get their IDs.
