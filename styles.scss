@@ -2,6 +2,24 @@
 
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap&subset=latin-ext');
 
+@media (max-width: 767.9px) {
+    h1 {
+        font-size: 60px !important;
+    }
+    h3 {
+        font-size: 25px !important;
+    }
+    .content-row {
+        padding-top: 15px;
+    }
+    #header-content {
+        height: 300px !important;
+    }
+    .genre-list li {
+        font-size: 15px !important;
+    }
+}
+
 body {
     background-color: #666666;
     background: url("assets/cdj.jpg") no-repeat center center fixed;
@@ -37,6 +55,7 @@ h1, h2 {
     height: 400px;
     h1 {
         font-size: 80px;
+        text-align: center;
     }
 }
 
@@ -64,16 +83,14 @@ h1, h2 {
 }
 
 .dj-card {
+    margin-top: 15px;
     background-color: rgba(45, 45, 45, 0.7);
     border-radius: 5px;
     color: #dddddd;
 
-    .row {
-        margin-top: 10px;
-    }
-
-    .khaled-deep-quote {
-        font-style: italic;
+    > .row {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .genre-list {
@@ -101,20 +118,21 @@ h1, h2 {
         }
     }
 
-    .dj-content {
-        padding-top: 10px;
-        padding-bottom: 10px;
+    .content-row {
+        height: 100%;
+    }
+
+    .dj-bio {
         text-align: justify;
-        * {
-            padding-right: 10px;
-        }
     }
 
     .music-expand {
         position: relative;
-        width: 40px;
+        width: 100%;
+        max-width: 50px;
         top: 50%;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
         transform-origin: center center;
         transition: transform 0.5s ease;
         cursor: pointer;
@@ -122,7 +140,6 @@ h1, h2 {
 
     .dj-img img {
         width: 100%;
-        padding: 10px 0px 10px 10px;
     }
     .dj-music-container {
         overflow: hidden;
@@ -132,7 +149,6 @@ h1, h2 {
             iframe {
                 width: calc(100% - 20px);
                 border-radius: 5px;
-                margin: 10px 10px 10px 10px;
                 background-color: #333333;
             }
         }

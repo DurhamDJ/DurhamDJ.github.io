@@ -14,7 +14,7 @@ for (let i of djNames) {
     let dj = djs[i];
 
     // add them to the page
-    list.append('<div class="dj-card"><div class="row"><div class="col-md-3 dj-img"><img></div><div class="col-md-8 dj-content"><h3></h3><div class="dj-bio"><p></p></div><ul class="genre-list"></ul></div><div class="col-md-1 dropdown-container"><img src="assets/dropdown.svg" class="music-expand" onclick="toggleMusic(this)"></div></div><div class="dj-music-container"><div class="dj-music"></div></div></div>');
+    list.append('<div class="dj-card col"><div class="row"><div class="col-md-3 dj-img"><img></div><div class="col-md-9 dj-content"><div class="row content-row"><div class="col-10"><h3></h3><div class="dj-bio"><p></p></div><ul class="genre-list"></ul></div><div class="col-2 dropdown-container"><img src="assets/dropdown.svg" class="music-expand" onclick="toggleMusic(this)"></div></div></div></div><div class="dj-music-container"><div class="dj-music"></div></div></div>');
     let card = $('#dj-list .dj-card:last-child');
     dj.card = card;
     card.find('.dj-content h3').html(i);

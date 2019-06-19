@@ -1,5 +1,23 @@
 /* #464646, #a32691 */
 @import url("https://fonts.googleapis.com/css?family=Righteous&display=swap&subset=latin-ext");
+@media (max-width: 767.9px) {
+  h1 {
+    font-size: 60px !important;
+  }
+  h3 {
+    font-size: 25px !important;
+  }
+  .content-row {
+    padding-top: 15px;
+  }
+  #header-content {
+    height: 300px !important;
+  }
+  .genre-list li {
+    font-size: 15px !important;
+  }
+}
+
 body {
   background-color: #666666;
   background: url("assets/cdj.jpg") no-repeat center center fixed;
@@ -45,6 +63,7 @@ h1, h2 {
 
 #header-content h1 {
   font-size: 80px;
+  text-align: center;
 }
 
 #main-content {
@@ -78,17 +97,15 @@ h1, h2 {
 }
 
 .dj-card {
+  margin-top: 15px;
   background-color: rgba(45, 45, 45, 0.7);
   border-radius: 5px;
   color: #dddddd;
 }
 
-.dj-card .row {
-  margin-top: 10px;
-}
-
-.dj-card .khaled-deep-quote {
-  font-style: italic;
+.dj-card > .row {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .dj-card .genre-list {
@@ -119,22 +136,22 @@ h1, h2 {
   color: #ffffff;
 }
 
-.dj-card .dj-content {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: justify;
+.dj-card .content-row {
+  height: 100%;
 }
 
-.dj-card .dj-content * {
-  padding-right: 10px;
+.dj-card .dj-bio {
+  text-align: justify;
 }
 
 .dj-card .music-expand {
   position: relative;
-  width: 40px;
+  width: 100%;
+  max-width: 50px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
   -webkit-transform-origin: center center;
           transform-origin: center center;
   -webkit-transition: -webkit-transform 0.5s ease;
@@ -146,7 +163,6 @@ h1, h2 {
 
 .dj-card .dj-img img {
   width: 100%;
-  padding: 10px 0px 10px 10px;
 }
 
 .dj-card .dj-music-container {
@@ -162,7 +178,6 @@ h1, h2 {
 .dj-card .dj-music-container .dj-music iframe {
   width: calc(100% - 20px);
   border-radius: 5px;
-  margin: 10px 10px 10px 10px;
   background-color: #333333;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -11,7 +11,7 @@ let djs = {
     },
     
     'DJ Khaled': {
-        'bio': '<span class="khaled-deep-quote">"The price of fame, shit real. Fuck fame (man fuck this shit). Fuck the game."</span>  ~ DJ Khaled',
+        'bio': '"The price of fame, shit real. Fuck fame (man fuck this shit). Fuck the game."  ~ DJ Khaled',
         'img': 'assets/djimg/KHALED.jpg',
         'genres': [
             'memes',
