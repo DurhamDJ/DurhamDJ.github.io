@@ -147,7 +147,8 @@ h1, h2 {
             margin-top: -100%;
             transition: margin-top ease 0.5s;
             iframe {
-                width: calc(100% - 20px);
+                margin-bottom: 8px;
+                width: 100%;
                 border-radius: 5px;
                 background-color: #333333;
             }

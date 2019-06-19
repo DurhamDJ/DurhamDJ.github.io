@@ -176,7 +176,8 @@ h1, h2 {
 }
 
 .dj-card .dj-music-container .dj-music iframe {
-  width: calc(100% - 20px);
+  margin-bottom: 8px;
+  width: 100%;
   border-radius: 5px;
   background-color: #333333;
 }
