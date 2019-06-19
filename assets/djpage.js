@@ -76,7 +76,7 @@ function toggleMusic(elem) {
     // if the music panel isn't shown
     if (musicDiv.css('margin-top') !== '0px') {
         // rotate the toggler
-        $(elem).css('transform', 'translateY(-50%) rotate(180deg)');
+        $(elem).css('transform', 'translateY(-50%) translateX(-50%) rotate(180deg)');
         // show the music panel
         musicDiv.css('margin-top', '0px');
         // hide other music panels that might be open
@@ -85,13 +85,13 @@ function toggleMusic(elem) {
         });
         // and spin back any togglers that are rotated
         $('.music-expand').not(elem).each((index, el) => {
-            $(el).css('transform', 'translateY(-50%) rotate(0deg)');
+            $(el).css('transform', 'translateY(-50%) translateX(-50%) rotate(0deg)');
         })
     }
     else {
         // if the music panel is open, hide it and spin the toggler back around
         musicDiv.css('margin-top', '-' + musicDiv.outerHeight() + 'px');
-        $(elem).css('transform', 'translateY(-50%) rotate(0deg)');
+        $(elem).css('transform', 'translateY(-50%) translateX(-50%) rotate(0deg)');
     }
 }
 
