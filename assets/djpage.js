@@ -1,17 +1,25 @@
+/**
+ *  THIS WORK IS LICENSED UNDER THE GPL 3.0 LICENSE BY DURHAM UNIVERSITY DJ SOCIETY.
+ *  PLEASE SEE https://github.com/DurhamDJ/DurhamDJ.github.io/blob/master/LICENSE FOR MORE INFORMATION.
+ */
+
+// shuffle DJs, initialise variables
 let djNames = shuffle(Object.keys(djs));
 let genres = [];
 let list = $('#dj-list');
 let selected = 'all';
 
+// for each DJ
 for (let i of djNames) {
     let dj = djs[i];
+
+    // add them to the page
     list.append('<div class="dj-card"><div class="row"><div class="col-md-3 dj-img"><img></div><div class="col-md-8 dj-content"><h3></h3><div class="dj-bio"><p></p></div><ul class="genre-list"></ul></div><div class="col-md-1 dropdown-container"><img src="assets/dropdown.svg" class="music-expand" onclick="toggleMusic(this)"></div></div><div class="dj-music-container"><div class="dj-music"></div></div></div>');
     let card = $('#dj-list .dj-card:last-child');
     dj.card = card;
     card.find('.dj-content h3').html(i);
     card.find('.dj-img img').attr('src', dj.img);
     card.find('.dj-bio p').html(dj.bio);
-
     for (let j of dj.genres) {
         card.find('.genre-list').append('<li onclick="filterGenres(this.innerText)">' + j + '</li>')
         if (!genres.includes(j)) {
@@ -20,6 +28,7 @@ for (let i of djNames) {
         }
     }
 
+    // add Soundcloud etc embeds into the music section
     let musicDiv = card.find('dj-music');
     if (dj.music.length === 0) {
         card.find('.dropdown-container').remove();
@@ -39,8 +48,11 @@ for (let i of djNames) {
     }
 }
 
+// when the page is fully loaded
 window.onload = () => {
+    // hide the CDJ loading spinner
     $('#load-cover').css('opacity', '0');
+    // start loading iframes
     $('iframe').each((index, elem) => {
         $(elem).attr('src', $(elem).attr('source'));
     });
@@ -59,18 +71,25 @@ function removeLoad() {
  * @param {object} elem the toggler element triggering the function
  */
 function toggleMusic(elem) {
+    // find the music panel
     let musicDiv = $(elem).closest('div.dj-card').find('.dj-music');
+    // if the music panel isn't shown
     if (musicDiv.css('margin-top') !== '0px') {
+        // rotate the toggler
         $(elem).css('transform', 'translateY(-50%) rotate(180deg)');
+        // show the music panel
         musicDiv.css('margin-top', '0px');
+        // hide other music panels that might be open
         $('.dj-music').not(musicDiv).each((index, el) => {
             $(el).css('margin-top', '-' + $(el).outerHeight() + 'px');
         });
+        // and spin back any togglers that are rotated
         $('.music-expand').not(elem).each((index, el) => {
             $(el).css('transform', 'translateY(-50%) rotate(0deg)');
         })
     }
     else {
+        // if the music panel is open, hide it and spin the toggler back around
         musicDiv.css('margin-top', '-' + musicDiv.outerHeight() + 'px');
         $(elem).css('transform', 'translateY(-50%) rotate(0deg)');
     }
@@ -81,39 +100,55 @@ function toggleMusic(elem) {
  * @param {string} value the genre to filter DJs by (as written in the genre lists)
  */
 function filterGenres(value) {
+    // if we are selecting the existing value (ie clicking a genre that's already being filtered)
     if (value !== 'all' && value === selected) {
+        // remove the filter
         filterGenres('all');
         return;
     }
     else {
+        // otherwise, remember the new value
         selected = value;
     }
 
+    // update the genre dropdown to reflect the selected genre
     $('#genre-filter').val(value);
+    
+    // if we've selected 'all'
     if (value === 'all') {
         for (let i of djNames) {
-            djs[i].card.find('li').each((index, elem) => {
+            let card = djs[i].card;
+            // deselect all genres inside dj cards
+            card.find('li').each((index, elem) => {
                 elem = $(elem);
                 elem.removeClass('genre-selected');
             });
 
-            djs[i].card.show();
+            // show the DJ cards
+            card.show();
         }
     }
     else {
+        // if we've selected a genre
         for (let i of djNames) {
             let dj = djs[i];
+            let card = dj.card;
+            // for DJs that don't have that genre
             if (!dj.genres.includes(value)) {
-                dj.card.hide();
+                // hide that DJ
+                card.hide();
                 
-                dj.card.find('li').each((index, elem) => {
+                // and deselect all genre buttons
+                card.find('li').each((index, elem) => {
                     elem = $(elem);
                     elem.removeClass('genre-selected');
                 });
             }
             else {
-                dj.card.find('li').each((index, elem) => {
+                // if the DJ has that genre
+                card.find('li').each((index, elem) => {
                     elem = $(elem);
+                    // add the genre-selected class to the relevant genre
                     if (elem.text() === value) {
                         elem.addClass('genre-selected');
                     }
@@ -121,7 +156,8 @@ function filterGenres(value) {
                         elem.removeClass('genre-selected');
                     }
                 });
-                dj.card.show();
+                // and make sure that DJ's card is visible
+                card.show();
             }
         }
     }
