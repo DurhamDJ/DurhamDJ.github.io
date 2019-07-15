@@ -50,6 +50,8 @@ This data is stored as a JavaScript structure. That means that:
 * `{}` denotes an object (a set of key-value pairs, for example `'bio': 'DJ BIO'`)
 * `[]` denotes an array (a list of values)
 
+DJ images are cropped to a 4:3 aspect ratio when they're displayed to make the site more consistent. That means only the middle of the image will be visible in images taller or wider than 4:3, so make sure any important content (eg the DJ's face) is in the middle.
+
 Bear in mind that both of these require commas after every element inside them except the last item. If you forget to add commas, the code will break.
 
 ### Long bios
