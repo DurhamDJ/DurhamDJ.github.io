@@ -152,8 +152,15 @@ h1, h2 {
   cursor: pointer;
 }
 
-.dj-card .dj-img img {
+.dj-card .dj-img svg {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   width: 100%;
+  height: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 75%;
 }
 
 .dj-card .dj-music-container {
