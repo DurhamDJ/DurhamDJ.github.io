@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Righteous&display=swap&subset=latin-ext");
 body {
   background-color: #666666;
-  background: url("assets/cdj.jpg") no-repeat center center fixed;
+  background: url("assets/img/cdj.jpg") no-repeat center center fixed;
   background-size: cover;
   margin: 0px;
   color: #ffffff;
@@ -187,11 +187,17 @@ h1, h2 {
   .navbar .navbar-brand {
     height: 40px;
   }
-  h1 {
+  body {
+    font-size: 14px;
+  }
+  #header-content h1 {
     font-size: 60px;
   }
+  h2 {
+    font-size: 30px;
+  }
   h3 {
-    font-size: 25px;
+    font-size: 22px;
   }
   .content-row {
     padding-top: 15px;
@@ -200,7 +206,7 @@ h1, h2 {
     height: 300px;
   }
   .genre-list li {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
