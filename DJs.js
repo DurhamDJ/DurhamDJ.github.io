@@ -1,4 +1,70 @@
 let djs = {
+    'Dasha Anderson': {
+        'bio': '',
+        'img': '',
+        'genres': [
+            'drum and bass'
+        ],
+        'music': [
+            ['soundcloud', '160992638']
+        ]
+    },    
+    
+    'Aidan Williamson': {
+        'bio': '',
+        'img': '',
+        'genres': [
+            'drum and bass'
+        ],
+        'music': [
+            ['soundcloud', '160992638']
+        ]
+    },       
+    
+    'Miriam Lewis-Aiello': {
+        'bio': '',
+        'img': '',
+        'genres': [
+            'drum and bass'
+        ],
+        'music': [
+            ['soundcloud', '160992638']
+        ]
+    },       
+    
+    'Isaac Green': {
+        'bio': '',
+        'img': '',
+        'genres': [
+            'drum and bass'
+        ],
+        'music': [
+            ['soundcloud', '160992638']
+        ]
+    },      
+    
+    'Emily Kelly': {
+        'bio': '',
+        'img': '',
+        'genres': [
+            'drum and bass'
+        ],
+        'music': [
+            ['soundcloud', '160992638']
+        ]
+    },     
+    
+    'Brett Garrett': {
+        'bio': '',
+        'img': '',
+        'genres': [
+            'drum and bass'
+        ],
+        'music': [
+            ['soundcloud', '160992638']
+        ]
+    },     
+    
     'Harry Whittaker': {
         'bio': 'DJ Society President and co-organizer of breakthrough events',
         'img': 'assets/djimg/Harry Whittaker.jpg',
