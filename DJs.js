@@ -1,7 +1,7 @@
 let djs = {
     'Dasha Anderson': {
         'bio': '',
-        'img': '',
+        'img': 'assets/djimg/Dasha Anderson.jpg',
         'genres': [
             'drum and bass'
         ],
