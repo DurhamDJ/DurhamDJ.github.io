@@ -1,6 +1,52 @@
 let djs = {
-    'DJ Khanage': {
-        'bio': 'Worst DJ in Duz init, fuck Khanage',
+    'Harry Whittaker': {
+        'bio': 'DJ Society President and co-organizer of breakthrough events',
+        'img': 'assets/djimg/Harry Whittaker.jpg',
+        'genres': [
+            'drum and bass',
+            'jungle',
+            'house'
+        ],
+        'music': [
+            
+        ]
+    },    
+    
+    'Laszlo Karsai': {
+        'bio': '',
+        'img': '',
+        'genres': [
+            'drum and bass'
+        ],
+        'music': [
+            ['soundcloud', '160992638']
+        ]
+    },    
+    
+    'Andy Smith': {
+        'bio': '',
+        'img': '',
+        'genres': [
+            'drum and bass'
+        ],
+        'music': [
+            ['soundcloud', '160992638']
+        ]
+    },
+    
+    'Max Russell': {
+        'bio': '',
+        'img': '',
+        'genres': [
+            'drum and bass'
+        ],
+        'music': [
+            ['soundcloud', '160992638']
+        ]
+    },    
+    
+    'Ryan Khan': {
+        'bio': 'Co-organizer and DJ of the infamous drum and bass night Zellig sound',
         'img': 'assets/djimg/khanage.jpg',
         'genres': [
             'drum and bass'
