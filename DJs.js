@@ -41,12 +41,15 @@ let djs = {
                 Switch-Up and Rotate, whilst also having had experience playing in Norwich, \
                 Leeds and Newcastle. He has released music on Beastwang and Trench \
                 Bass Music Records, with singles and EPs lined up with various other labels.',
-        'img': '',
+        'img': 'assets/djimg/Isaac.png',
         'genres': [
-            'drum and bass'
+            'garage',
+            'UK bass',
+            'funk',
+            'drum and bass'        
         ],
         'music': [
-            ['soundcloud', '160992638']
+            ['soundcloud', '']
         ]
     },      
     
