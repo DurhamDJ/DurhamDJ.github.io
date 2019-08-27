@@ -36,7 +36,11 @@ let djs = {
     },       
     
     'Isaac Green': {
-        'bio': '',
+        'bio': 'Isaac Green (known within music as Zefer) has played across \
+                some of the major nights in Durham, including Monochrome, Dursesh, \
+                Switch-Up and Rotate, whilst also having had experience playing in Norwich, \
+                Leeds and Newcastle. He has released music on Beastwang and Trench \
+                Bass Music Records, with singles and EPs lined up with various other labels.',
         'img': '',
         'genres': [
             'drum and bass'
