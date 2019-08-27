@@ -44,7 +44,7 @@ for (let i of djNames) {
                 card.find('.dj-music').append('<iframe height="120" scrolling="no" frameborder="no" allow="autoplay" source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/' + j[1] + '&color=%23a32691&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Loading...</iframe>');
             }
             else if (j[0] == 'youtube') {
-                card.find('.dj-music').append('<iframe height="120" src="https://www.youtube-nocookie.com/embed/' + j[1] + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                card.find('.dj-music').append('<iframe height="400" src="https://www.youtube-nocookie.com/embed/' + j[1] + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
             }
         }
         musicDiv.css('margin-top', '-' + musicDiv.outerHeight() + 'px');
