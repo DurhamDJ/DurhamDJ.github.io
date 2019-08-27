@@ -85,9 +85,13 @@ let djs = {
         'bio': 'Laszlo Karsai aka Laszlo has been making the Durham DJ scene his home \
                 since late 2018. Promising to bring energy and groove to every occasion, \
                 his sets fuse fresh selections of house music effortlessly.',
-        'img': '',
+        'img': 'assets/djimg/Lazlo.png',
         'genres': [
-            'drum and bass'
+            'commercial dance',
+            'house',
+            'tech house',
+            'disco',
+            'funk'
         ],
         'music': [
             ['soundcloud', '160992638']
