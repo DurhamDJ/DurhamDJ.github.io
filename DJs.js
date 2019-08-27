@@ -124,7 +124,7 @@ let djs = {
     },    
     
     'Ryan Khan': {
-        'bio': 'Co-organizer and DJ of the infamous drum and bass night Zellig sound',
+        'bio': 'Co-organizer and DJ of the infamous drum and bass night Zellig sound.',
         'img': 'assets/djimg/khanage.jpg',
         'genres': [
             'drum and bass'
