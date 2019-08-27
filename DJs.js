@@ -49,7 +49,7 @@ let djs = {
             'drum and bass'        
         ],
         'music': [
-            ['soundcloud', '662385164']
+            ['soundcloud', '662385164'],
             ['soundcloud', '668394668']
         ]
     },      
