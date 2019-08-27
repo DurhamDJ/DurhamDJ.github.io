@@ -9,7 +9,7 @@ let djs = {
             'techno'
         ],
         'music': [
-            ['soundcloud', '160992638']
+
         ]
     },    
     
@@ -20,7 +20,10 @@ let djs = {
             'drum and bass'
         ],
         'music': [
-            ['soundcloud', '160992638']
+            ['mixcloud', '/deadW/the-duz-mix-cheese-charts-remixed/'],
+            ['mixcloud', '/deadW/multigenre-mix-2-prog-big-room-house-bounce-and-hardstyle/'],
+            ['mixcloud', '/deadW/the-psy-trance-mix/'],
+            ['mixcloud', '/deadW/hard-mix-hardstyle-hardcore-rawstyle-psystyle/']
         ]
     },       
     
