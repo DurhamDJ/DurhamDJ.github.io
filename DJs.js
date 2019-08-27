@@ -26,18 +26,7 @@ let djs = {
             ['mixcloud', '/deadW/hard-mix-hardstyle-hardcore-rawstyle-psystyle/']
         ]
     },       
-    
-    'Miriam Lewis-Aiello': {
-        'bio': '',
-        'img': '',
-        'genres': [
-            'drum and bass'
-        ],
-        'music': [
-            ['soundcloud', '160992638']
-        ]
-    },       
-    
+ 
     'Isaac Green': {
         'bio': 'Isaac Green (known within music as Zefer) has played across \
                 some of the major nights in Durham, including Monochrome, Dursesh, \
