@@ -88,7 +88,7 @@ let djs = {
             'house'
         ],
         'music': [
-            
+            ['youtube', 'y6120QOlsfU']
         ]
     },    
     
