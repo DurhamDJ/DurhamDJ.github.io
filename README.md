@@ -85,3 +85,10 @@ Copy-paste the code it gives you into the tool at [https://DurhamDJ.github.io/as
 (If the tool doesn't work, you need to copy the code into a text editor, look for something that looks like `api.soundcloud.com/tracks/253565889&...` and copy the number after `tracks/`.)
 
 The entry in `'music'` should look like `['soundcloud': 'ID-NUMBER']`.
+
+#### YouTube
+For a YouTube embed, get the address of the video. It will look like `https://www.youtube.com/watch?v=y6120QOlsfU?possibly-other=information` or  `https://youtu.be/y6120QOlsfU?possibly-other=information`.
+
+Just use the section that's like `y6120QOlsfU`, at the end of the main URL.
+
+The entry in `'music'` should look like `['youtube': 'y6120QOlsfU']`.
