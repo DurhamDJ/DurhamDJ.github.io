@@ -94,7 +94,8 @@ let djs = {
             'funk'
         ],
         'music': [
-            ['soundcloud', '160992638']
+            ['mixcloud', '/LO_LA/the-sound-of-swing/'],
+            ['mixcloud', '/LO_LA/journey-1-from-house-to-techno/']
         ]
     },    
     
