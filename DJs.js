@@ -59,12 +59,14 @@ let djs = {
     
     'Emily Kelly': {
         'bio': '',
-        'img': '',
+        'img': 'assets/djimg/Emily.jpg',
         'genres': [
-            'drum and bass'
+            'disco',
+            'house',
+            'techno'
         ],
         'music': [
-            ['soundcloud', '160992638']
+
         ]
     },     
     
