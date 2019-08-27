@@ -1,9 +1,12 @@
 let djs = {
     'Dasha Anderson': {
         'bio': '',
-        'img': 'assets/djimg/Dasha Anderson.jpg',
+        'img': 'assets/djimg/Dasha Anderson.png',
         'genres': [
-            'drum and bass'
+            'drum and bass',
+            'jungle',
+            'breakbeat',
+            'techno'
         ],
         'music': [
             ['soundcloud', '160992638']
@@ -79,7 +82,7 @@ let djs = {
     },    
     
     'Laszlo Karsai': {
-        'bio': '',
+        'bio': 'Laszlo Karsai aka Laszlo has been making the Durham DJ scene his home since late 2018. Promising to bring energy and groove to every occasion, his sets fuse fresh selections of house music effortlessly.',
         'img': '',
         'genres': [
             'drum and bass'
