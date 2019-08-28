@@ -87,7 +87,7 @@ let djs = {
         'bio': 'Laszlo Karsai aka Laszlo has been making the Durham DJ scene his home \
                 since late 2018. Promising to bring energy and groove to every occasion, \
                 his sets fuse fresh selections of house music effortlessly.',
-        'img': 'assets/djimg/Lazlo.png',
+        'img': 'assets/djimg/Laszlo.png',
         'genres': [
             'commercial dance',
             'house',
@@ -132,5 +132,25 @@ let djs = {
         'music': [
             ['soundcloud', '563014539']
         ]
+    },
+
+    'Barnaby Collins': {
+        'bio': 'Having made a name for himself in his debut mix at the DDJS showcase \
+                in 2018, Barnaby is keen to get involved with new events that will widen \
+                the scope of the Durham club scene, as well as to represent liquid drum \
+                and bass at established nights.',
+        'img': 'assets/djimg/Barnaby.jpg',
+        'genres': [
+            'drum and bass',
+            'ambient'
+        ],
+        'music': [
+            ['mixcloud', '/barnabycollins/liquid-drum-bass-mix-2/']
+        ],
+        'socials': {
+            'facebook': 'barnaby.a.collins',
+            'mixcloud': 'barnabycollins',
+            'soundcloud': 'barnabycollins'
+        }
     }
 };

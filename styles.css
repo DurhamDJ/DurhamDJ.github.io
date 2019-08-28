@@ -53,6 +53,11 @@ h1, h2 {
   text-align: justify;
 }
 
+#society-intro a {
+  font-weight: bold;
+  color: #ffffff;
+}
+
 #filter-cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,6 +183,24 @@ h1, h2 {
   width: 100%;
   border-radius: 5px;
   background-color: #333333;
+}
+
+.dj-card .social-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.dj-card .social-container a {
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 10px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.dj-card .social-container a:hover {
+  color: #aaaaaa;
 }
 
 @media (max-width: 767.9px) {

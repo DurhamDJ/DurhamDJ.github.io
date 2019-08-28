@@ -41,7 +41,11 @@ Each DJ's data should be of the form as follows:
         'music': [          // any mixes or tracks that need to be shown for the DJ
             ['soundcloud', 'SOUNDCLOUD ID'],
             ['mixcloud', 'MIXCLOUD/ID']
-        ]
+        ],
+        'socials': {
+            'facebook': 'FACEBOOK ID',
+            'mixcloud': 'MIXCLOUD ID'
+        }
     }
 ```
 
@@ -63,7 +67,7 @@ If a bio is too long to fit on a screen, you can split it across multiple lines 
 
 You should end up with something like this:
 ```js
-'bio': 'This is a pretty long biography,\
+'bio': 'This is a pretty long biography, \
         but you can split it like this.'
 ```
 
@@ -92,3 +96,13 @@ For a YouTube embed, get the address of the video. It will look like `https://ww
 Just use the section that's like `y6120QOlsfU`, at the end of the main URL.
 
 The entry in `'music'` should look like `['youtube': 'y6120QOlsfU']`.
+
+### Social Media
+Social media links are included in a similar way to music embeds, except that there should be at most one of each type for each DJ. They are included as icons in the bottom corner of the DJ's bio box. Currently supported are:
+
+- Facebook
+- Mixcloud
+- Soundcloud
+- YouTube
+
+For all of these, first visit the user's page. Next, copy the user's ID from the end of the URL (for example from `https://www.example.com/coolguy?maybe-some-other-info` you want to use just `coolguy`). However, YouTube often has URLs in the format of `https://www.youtube.com/urltype/username?maybe-other-info`. In this case, use `urltype/username`.

@@ -8,13 +8,31 @@ let djNames = shuffle(Object.keys(djs));
 let genres = [];
 let list = $('#dj-list');
 let selected = 'all';
+let socialMappings = {
+    'facebook': [
+        'fab fa-facebook-f',
+        'https://www.facebook.com/'
+    ],
+    'mixcloud': [
+        'fab fa-mixcloud',
+        'https://www.mixcloud.com/'
+    ],
+    'soundcloud': [
+        'fab fa-soundcloud',
+        'https://www.soundcloud.com/'
+    ],
+    'youtube': [
+        'fab fa-youtube',
+        'https://www.youtube.com/channel/'
+    ]
+}, supportedSocials = Object.keys(socialMappings);
 
 // for each DJ
 for (let i of djNames) {
     let dj = djs[i];
 
     // add them to the page
-    list.append('<div class="dj-card col"><div class="row"><div class="col-md-3 dj-img"><svg width="4" height="3"></div><div class="col-md-9 dj-content"><div class="row content-row"><div class="col-10"><h3></h3><div class="dj-bio"><p></p></div><ul class="genre-list"></ul></div><div class="col-2 dropdown-container"><img src="assets/img/dropdown.svg" class="music-expand" onclick="toggleMusic(this)"></div></div></div></div><div class="dj-music-container"><div class="dj-music"></div></div></div>');
+    list.append('<div class="dj-card col"><div class="row"><div class="col-md-3 dj-img"><svg width="4" height="3"></div><div class="col-md-9 dj-content"><div class="row content-row"><div class="col-10"><h3></h3><div class="dj-bio"><p></p></div><ul class="genre-list"></ul><div class="social-container"></div></div><div class="col-2 dropdown-container"><img src="assets/img/dropdown.svg" class="music-expand" onclick="toggleMusic(this)"></div></div></div></div><div class="dj-music-container"><div class="dj-music"></div></div></div>');
     let card = $('#dj-list .dj-card:last-child');
     dj.card = card;
     card.find('.dj-content h3').html(i);
@@ -38,16 +56,38 @@ for (let i of djNames) {
     else {
         for (j of dj.music) {
             if (j[0] == 'mixcloud') {
-                card.find('.dj-music').append('<iframe height="120" scrolling="no" frameborder="0" source="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=' + j[1] + '">Loading...</iframe>');
+                musicDiv.append('<iframe height="120" scrolling="no" frameborder="0" source="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=' + j[1] + '">Loading...</iframe>');
             }
             else if (j[0] == 'soundcloud') {
-                card.find('.dj-music').append('<iframe height="120" scrolling="no" frameborder="no" allow="autoplay" source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/' + j[1] + '&color=%23a32691&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Loading...</iframe>');
+                musicDiv.append('<iframe height="120" scrolling="no" frameborder="no" allow="autoplay" source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/' + j[1] + '&color=%23a32691&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Loading...</iframe>');
             }
             else if (j[0] == 'youtube') {
-                card.find('.dj-music').append('<iframe height="400" src="https://www.youtube-nocookie.com/embed/' + j[1] + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                musicDiv.append('<iframe height="400" src="https://www.youtube-nocookie.com/embed/' + j[1] + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
             }
         }
         musicDiv.css('margin-top', '-' + musicDiv.outerHeight() + 'px');
+    }
+    // add social links
+    let socialsDiv = card.find('.social-container');
+    
+
+    // skip adding socials if the DJ doesn't have any
+    if (!dj.socials) {
+        socialsDiv.remove();
+        continue;
+    }
+    let socialKeys = Object.keys(dj.socials);
+    if (socialKeys.length === 0) {
+        socialsDiv.remove();
+        continue;
+    }
+    else {
+        for (j of socialKeys) {
+            if (supportedSocials.includes(j)) {
+                let map = socialMappings[j];
+                socialsDiv.append('<a href="' + map[1] + dj.socials[j] + '"><i class="' + map[0] + '"></i></a>')
+            }
+        }
     }
 }
 

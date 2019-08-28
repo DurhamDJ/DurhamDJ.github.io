@@ -44,6 +44,11 @@ h1, h2 {
     padding: 1% 0px;
     background-color: rgba(10, 10, 10, 0.6);
     text-align: justify;
+
+    a {
+        font-weight: bold;
+        color: #ffffff;
+    }
 }
 
 #filter-cont {
@@ -148,6 +153,22 @@ h1, h2 {
                 border-radius: 5px;
                 background-color: #333333;
             }
+        }
+    }
+
+    .social-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        a {
+            font-size: 20px;
+            color: #ffffff;
+            margin-right: 10px;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #aaaaaa;
         }
     }
 }
