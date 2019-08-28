@@ -98,7 +98,7 @@ Just use the section that's like `y6120QOlsfU`, at the end of the main URL.
 The entry in `'music'` should look like `['youtube': 'y6120QOlsfU']`.
 
 ### Social Media
-Social media links are included in a similar way to music embeds, except that there should be at most one of each type for each DJ. They are included as icons in the bottom corner of the DJ's bio box. Currently supported are:
+Social media links are included in a similar way to music embeds, except that there should be at most one of each type for each DJ. They are included as icons in the top corner of the DJ's bio box. Currently supported are:
 
 - Facebook
 - Mixcloud
