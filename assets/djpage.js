@@ -47,7 +47,7 @@ for (let i of djNames) {
     }
 
     // add Soundcloud etc embeds into the music section
-    let musicDiv = card.find('dj-music');
+    let musicDiv = card.find('.dj-music');
     if (dj.music.length === 0) {
         card.find('.dropdown-container').remove();
         card.find('.dj-content').attr('class', 'col-md-9 dj-content');
@@ -67,6 +67,7 @@ for (let i of djNames) {
         }
         musicDiv.css('margin-top', '-' + musicDiv.outerHeight() + 'px');
     }
+
     // add social links
     let socialsDiv = card.find('.social-container');
     
