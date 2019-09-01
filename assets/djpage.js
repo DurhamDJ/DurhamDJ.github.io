@@ -42,7 +42,6 @@ for (let i of djNames) {
         card.find('.genre-list').append('<li onclick="filterGenres(this.innerText)">' + j + '</li>')
         if (!genres.includes(j)) {
             genres.push(j);
-            $('#genre-filter').append('<option value="' + j + '">' + j + '</select>')
         }
     }
 
@@ -90,6 +89,24 @@ for (let i of djNames) {
             }
         }
     }
+}
+
+// function to sort genres alphabetically regardless of case
+function genreSort(a, b) {
+    a = a.toLowerCase(), b = b.toLowerCase();
+    if (a < b) {
+        return -1;
+    }
+    if (b < a) {
+        return 1;
+    }
+    return 0;
+}
+// sort genres using genreSort()
+genres.sort(genreSort);
+// add genres to the filter box
+for (j of genres) {
+    $('#genre-filter').append('<option value="' + j + '">' + j + '</select>');
 }
 
 // when the page is fully loaded
