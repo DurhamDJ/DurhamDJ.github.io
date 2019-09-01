@@ -136,7 +136,7 @@ let djs = {
 
     'Barnaby Collins': {
         'bio': 'Having made a name for himself in his debut mix at the DDJS showcase \
-                in 2018, Barnaby is keen to get involved with new events that will widen \
+                in 2019, Barnaby is keen to get involved with new events that will widen \
                 the scope of the Durham club scene, as well as to represent liquid drum \
                 and bass at established nights.',
         'img': 'assets/djimg/Barnaby.jpg',
