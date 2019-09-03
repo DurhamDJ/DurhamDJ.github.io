@@ -142,9 +142,11 @@ let djs = {
         'img': 'assets/djimg/Barnaby.jpg',
         'genres': [
             'drum and bass',
-            'ambient'
+            'ambient',
+            'hip-hop'
         ],
         'music': [
+            ['mixcloud', '/barnabycollins/jazzy-drum-bass-mix-1/'],
             ['mixcloud', '/barnabycollins/liquid-drum-bass-mix-2/']
         ],
         'socials': {
