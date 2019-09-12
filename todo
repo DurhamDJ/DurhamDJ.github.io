@@ -1,2 +1,4 @@
 add contact details for exec / Ryan
 make navbar useful
+stagger / delay iframe loading to improve mobile performance
+- either do eg 1 per second, or only load them when the user opens the dropdown
