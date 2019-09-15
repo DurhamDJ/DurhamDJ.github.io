@@ -1,4 +1,14 @@
 // code to control user opt-in / opt-out for Google Analytics
+
+$('#GAOptin').click((e) => {
+    e.preventDefault();
+    gaOptin();
+});
+$('#GAOptout').click((e) => {
+    e.preventDefault();
+    gaOptout();
+});
+
 let gaProperty = 'UA-58923240-3',  disableStr = 'ga-disable-' + gaProperty;
 if (document.cookie.indexOf(disableStr + '=true') > -1) {
     window[disableStr] = true;
