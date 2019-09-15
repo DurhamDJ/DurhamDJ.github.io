@@ -134,10 +134,13 @@ function removeLoad() {
 function toggleMusic(elem) {
     // find the music panel
     let musicDiv = $(elem).closest('div.dj-card').find('.dj-music');
-
-    musicDiv.find('iframe').each((index, elem) => {
-        $(elem).attr('src', $(elem).attr('source'));
-    });
+    
+    if (!musicDiv.data('loaded')) {
+        musicDiv.find('iframe').each((index, elem) => {
+            $(elem).attr('src', $(elem).attr('source'));
+        });
+        musicDiv.data('loaded', true);
+    }
 
     // if the music panel isn't shown
     if (musicDiv.css('margin-top') !== '0px') {
