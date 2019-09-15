@@ -173,6 +173,14 @@ h1, h2 {
     }
 }
 
+.toast {
+    text-align: justify;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #000000;
+}
+
 @media (max-width: 767.9px) {
     .navbar {
         height: 60px;
