@@ -23,7 +23,7 @@ let socialMappings = {
     ],
     'youtube': [
         'fab fa-youtube',
-        'https://www.youtube.com/channel/'
+        'https://www.youtube.com/'
     ]
 }, supportedSocials = Object.keys(socialMappings);
 
