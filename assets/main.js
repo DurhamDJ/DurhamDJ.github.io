@@ -1,3 +1,14 @@
+// register service worker to cache content
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/serviceworker.js', {scope: '/'}).then(function(registration) {
+          }, /*catch*/ function(error) {
+            console.log('Service worker registration failed:', error);
+        });
+    });
+}
+
+
 // code to control user opt-in / opt-out for Google Analytics
 
 $('#GAOptin').click((e) => {
