@@ -1,6 +1,7 @@
 let djs = {
     'Dasha Anderson': {
-        'bio': '',
+        'bio': 'Breakthrough Events resident who loves anything with good drums – drum and bass, techno, house, breakbeat, electro. \
+         Aerial has done guest appearances at 1984, Zellig Sound, Durfest and Fractal, playing a wide range of electronic music genres. ',
         'img': 'assets/djimg/Dasha Anderson.png',
         'genres': [
             'drum and bass',
@@ -14,7 +15,10 @@ let djs = {
     },    
     
     'Aidan Williamson': {
-        'bio': '',
+        'bio': 'deadW is a very experienced DJ with an event runner & DJ residency at klute! He has two sides to the W - \
+                there is the fun, cheesey, and dancey side which gets everyone on their feet, jumping in the air and singing along, \
+                and there is the edgier side where he spins all sorts festival and underground bangers fluently! Whatever the event, expect fresh new mashups, \
+                bootlegs, and remixers (some of which deadW may have produced himself!) - be prepared to hear classics and bangers like you have never heard them before!',
         'img': '',
         'genres': [
             'drum and bass'
@@ -47,12 +51,17 @@ let djs = {
     },      
     
     'Emily Kelly': {
-        'bio': '',
+        'bio': 'Emily DJs a bit of everything, and has played at Durham events + college balls in the past. \
+         She’s also involved in the running of Slink and Continental nights in Durham and Newcastle',
         'img': 'assets/djimg/Emily.jpg',
         'genres': [
             'disco',
             'house',
-            'techno'
+            'techno',
+            'funk',
+            'soul',
+            'pop',
+            'garage'
         ],
         'music': [
 
@@ -71,7 +80,9 @@ let djs = {
     },     
     
     'Harry Whittaker': {
-        'bio': 'DJ Society President and co-organizer of breakthrough events',
+        'bio': 'DJ Society President and co-founder of breakthrough events. \
+                With guest DJ appearances at Zellig Sound and Fractal and a residency at Rotate \
+                Harry Whittaker can play a range of music suitable for house parties and club nights.',
         'img': 'assets/djimg/Harry Whittaker.jpg',
         'genres': [
             'drum and bass',
