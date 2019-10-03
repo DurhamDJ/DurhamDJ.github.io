@@ -19,9 +19,13 @@ let djs = {
                 there is the fun, cheesey, and dancey side which gets everyone on their feet, jumping in the air and singing along, \
                 and there is the edgier side where he spins all sorts festival and underground bangers fluently! Whatever the event, expect fresh new mashups, \
                 bootlegs, and remixers (some of which deadW may have produced himself!) - be prepared to hear classics and bangers like you have never heard them before!',
-        'img': '',
+        'img': 'assets/djimg/DeadW.png',
         'genres': [
-            'drum and bass'
+            'pop',
+            'dance',
+            'EDM',
+            'psy-trance',
+            'hardcore'
         ],
         'music': [
             ['mixcloud', '/deadW/the-duz-mix-cheese-charts-remixed/'],
@@ -68,17 +72,7 @@ let djs = {
         ]
     },     
     
-    'Brett Garrett': {
-        'bio': '',
-        'img': '',
-        'genres': [
-            'drum and bass'
-        ],
-        'music': [
-            ['soundcloud', '160992638']
-        ]
-    },     
-    
+ 
     'Harry Whittaker': {
         'bio': 'DJ Society President and co-founder of breakthrough events. \
                 With guest DJ appearances at Zellig Sound and Fractal and a residency at Rotate \
@@ -109,28 +103,6 @@ let djs = {
         'music': [
             ['mixcloud', '/LO_LA/the-sound-of-swing/'],
             ['mixcloud', '/LO_LA/journey-1-from-house-to-techno/']
-        ]
-    },    
-    
-    'Andy Smith': {
-        'bio': '',
-        'img': '',
-        'genres': [
-            'drum and bass'
-        ],
-        'music': [
-            ['soundcloud', '160992638']
-        ]
-    },
-    
-    'Max Russell': {
-        'bio': '',
-        'img': '',
-        'genres': [
-            'drum and bass'
-        ],
-        'music': [
-            ['soundcloud', '160992638']
         ]
     },    
     
