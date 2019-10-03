@@ -124,9 +124,11 @@ let djs = {
                 techno, breakbeat and industrial. Andy has played at various clubs across the \
                 UK with the likes of Dr. Joseph, Sybil, Blasha & Allatt, Leah Floyeurs and Surgeon. \
                 For booking information please email orificedj@gmail.com',
-        'img': '',
+        'img': 'assets/djimg/Dasha Anderson.png',
         'genres': [
-            'drum and bass'
+            'techno',
+            'electro',
+            'breaks'
         ],
         'music': [
             ['soundcloud', '160992638']
