@@ -2,7 +2,7 @@ let djs = {
     'Dasha Anderson': {
         'bio': 'Breakthrough Events resident who loves anything with good drums – drum and bass, techno, house, breakbeat, electro. \
          Aerial has done guest appearances at 1984, Zellig Sound, Durfest and Fractal, playing a wide range of electronic music genres. ',
-        'img': 'assets/djimg/Dasha Anderson.png',
+        'img': 'assets/djimg/Andy.png',
         'genres': [
             'drum and bass',
             'jungle',
