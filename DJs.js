@@ -116,7 +116,23 @@ let djs = {
             ['soundcloud', '563014539']
         ]
     },
-
+    
+    'Andy Smith': {
+        'bio': 'Andy Smith (aka Orifice) is a resident DJ and organiser of 1984, \
+                Durhams only dedicated techno party. Andy has earned a reputation \
+                as a predominatly vinyl only DJ whose sets consist of a blend of electro, \
+                techno, breakbeat and industrial. Andy has played at various clubs across the \
+                UK with the likes of Dr. Joseph, Sybil, Blasha & Allatt, Leah Floyeurs and Surgeon. \
+                For booking information please email orificedj@gmail.com',
+        'img': '',
+        'genres': [
+            'drum and bass'
+        ],
+        'music': [
+            ['soundcloud', '160992638']
+        ]
+    },
+    
     'Barnaby Collins': {
         'bio': 'Having made a name for himself in his debut mix at the DDJS showcase \
                 in 2019, Barnaby is keen to get involved with new events that will widen \
