@@ -2,7 +2,7 @@ let djs = {
     'Dasha Anderson': {
         'bio': 'Breakthrough Events resident who loves anything with good drums – drum and bass, techno, house, breakbeat, electro. \
          Aerial has done guest appearances at 1984, Zellig Sound, Durfest and Fractal, playing a wide range of electronic music genres. ',
-        'img': 'assets/djimg/Andy.png',
+        'img': 'assets/djimg/Dasha Anderson.png',
         'genres': [
             'drum and bass',
             'jungle',
@@ -124,7 +124,7 @@ let djs = {
                 techno, breakbeat and industrial. Andy has played at various clubs across the \
                 UK with the likes of Dr. Joseph, Sybil, Blasha & Allatt, Leah Floyeurs and Surgeon. \
                 For booking information please email orificedj@gmail.com',
-        'img': 'assets/djimg/Dasha Anderson.png',
+        'img': 'assets/djimg/Andy.png',
         'genres': [
             'techno',
             'electro',
