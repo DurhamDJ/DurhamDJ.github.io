@@ -209,6 +209,7 @@ h1, h2 {
   bottom: 10px;
   right: 10px;
   color: #000000;
+  display: none;
 }
 
 @media (max-width: 767.9px) {
