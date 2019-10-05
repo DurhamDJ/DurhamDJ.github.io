@@ -70,7 +70,7 @@ h1, h2 {
 #main-content {
     margin-top: 50px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 60px;
     background-color: rgba(0, 0, 0, 0.6);
     h2 {
         margin: 0px;
@@ -180,6 +180,11 @@ h1, h2 {
     right: 10px;
     color: #000000;
     display: none;
+}
+
+footer {
+    background-color: #222222;
+    padding: 1% 0px;
 }
 
 @media (max-width: 767.9px) {
