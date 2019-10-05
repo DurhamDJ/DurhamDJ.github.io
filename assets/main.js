@@ -30,16 +30,21 @@ else if (document.cookie.indexOf(disableStr + '=false') > -1) {
     console.log('Google Analytics Enabled. If you want to change your mind, you can either run gaOptout() in the console or delete the cookies for this domain.');
 }
 else {
+    $('#cookie-toast').css('display', 'block');
     $('#cookie-toast').toast('show');
 }
 function gaOptout() {
     document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
     window[disableStr] = true;
+
+    $('#cookie-toast').css('display', 'none');
     $('#cookie-toast').toast('hide');
     return 'Succesfully opted you out of Google Analytics';
 }
 function gaOptin() {
     document.cookie = disableStr + '=false; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+    
+    $('#cookie-toast').css('display', 'none');
     $('#cookie-toast').toast('hide');
     return 'Succesfully opted you into Google Analytics';
 }
