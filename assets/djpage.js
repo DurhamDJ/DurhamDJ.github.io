@@ -49,7 +49,7 @@ for (let i of djNames) {
     let musicDiv = card.find('.dj-music');
     if (dj.music.length === 0) {
         card.find('.dropdown-container').remove();
-        card.find('.dj-content').attr('class', 'col-md-9 dj-content');
+        //card.find('.col-10').attr('class', 'col-12');
         musicDiv.remove();
     }
     else {
