@@ -10,7 +10,7 @@ let djs = {
             'techno'
         ],
         'music': [
-
+            ['mixcloud', '/djaerial/aerial-viper-1/']
         ]
     },    
     
