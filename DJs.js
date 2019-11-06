@@ -34,7 +34,25 @@ let djs = {
             ['mixcloud', '/deadW/hard-mix-hardstyle-hardcore-rawstyle-psystyle/']
         ]
     },       
- 
+  
+    'Brett Garrett': {
+        'bio': 'Brėtt has held down regular sets throughout the city ranging in styles \
+                from house/techno to R’n’B and is now a regular fixture at Rotate and Fabio’s \
+                bar. Brėtt is hard to define musically because of his ability to mix whatever \
+                the client throws at him with regular gigs for the international societies. \
+                This year promises to be busy, by keeping the people of durham grooving with \
+                multiple gigs throughout both the city and surrounding areas.',
+        'img': 'assets/djimg/Andy.png',
+        'genres': [
+            'techno',
+            'electro',
+            'breaks'
+        ],
+        'music': [
+
+        ]
+    },
+      
     'Isaac Green': {
         'bio': 'Isaac Green (known within music as Zefer) has played across \
                 some of the major nights in Durham, including Monochrome, Dursesh, \
