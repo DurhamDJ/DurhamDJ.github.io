@@ -42,15 +42,11 @@ let djs = {
                 the client throws at him with regular gigs for the international societies. \
                 This year promises to be busy, by keeping the people of durham grooving with \
                 multiple gigs throughout both the city and surrounding areas.',
-        'img': 'assets/djimg/Andy.png',
+        'img': 'assets/djimg/Brett2.png',
         'genres': [
-            'techno',
-            'electro',
-            'breaks'
         ],
         'music': [
-
-        ]
+        ]    
     },
       
     'Isaac Green': {
