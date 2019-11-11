@@ -169,5 +169,22 @@ let djs = {
             'mixcloud': 'barnabycollins',
             'soundcloud': 'barnabycollins'
         }
+    },
+
+    'Guillaume Hiller': {
+        'bio': 'Influenced by the 1990s percussion-driven techno of his hometown Frankfurt, \
+                the German DJ has made himself an advocate of German techno abroad. After playing in \
+                Nancy’s (FR) student scene, he is now turning up in Durham to make himself a name for \
+        `       his groovy sets catching trippy melodies and heavy kick-drums.',
+        'img': 'assets/djimg/Guillaume.jpg',
+        'genres': [
+            'techno'
+        ],
+        'music': [
+
+        ],
+        'socials': {
+            'facebook': 'guillaume.hiller.7'
+        }
     }
 };

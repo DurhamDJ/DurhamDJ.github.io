@@ -47,7 +47,7 @@ for (let i of djNames) {
 
     // add Soundcloud etc embeds into the music section
     let musicDiv = card.find('.dj-music');
-    if (dj.music.length === 0) {
+    if (!dj.music || dj.music.length === 0) {
         card.find('.dropdown-container').remove();
         //card.find('.col-10').attr('class', 'col-12');
         musicDiv.remove();
