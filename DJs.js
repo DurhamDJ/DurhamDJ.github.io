@@ -150,10 +150,11 @@ let djs = {
     },
     
     'Barnaby Collins': {
-        'bio': 'Having made a name for himself in his debut mix at the DDJS showcase \
-                in 2019, Barnaby is keen to get involved with new events that will widen \
-                the scope of the Durham club scene, as well as to represent liquid drum \
-                and bass at established nights.',
+        'bio': 'Since his debut at the DDJS showcase last year, Barnaby has quickly gained a reputation \
+                thanks to his clean mixes and varied music selection, and is a popular regular at our \
+                weekly open decks sessions. This year he is keen to further push the boundaries of the \
+                Durham club scene, alongside bringing his signature creativity, passion and \
+                experimentalism to more established nights.',
         'img': 'assets/djimg/Barnaby.jpg',
         'genres': [
             'drum and bass',
