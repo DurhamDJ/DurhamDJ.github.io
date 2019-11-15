@@ -187,5 +187,28 @@ let djs = {
         'socials': {
             'facebook': 'guillaume.hiller.7'
         }
+    },
+
+    'Ian Lin': {
+        'bio': 'Ian Lin, a DJ & promoter from Taiwan\'s indie label \
+                "Minelectro Inc."  As the founder of National Cheng Kung University \
+                Electronic Music Club, he won the love of the crowd in all kinds of \
+                parties, bars and music scene with nice groovy tunes and surprising \
+                music selection. Now, he\'s ready to bring these great vibes here to the UK!',
+        'img': 'assets/djimg/IanLin.jpg',
+        'genres': [
+            'house',
+            'tech house',
+            'disco',
+            'funk',
+            'pop'
+        ],
+        'music': [
+            ['mixcloud', '/ian-lin7/beach-vibes/'],
+            ['mixcloud','/民生電氣Minelectro_inc/minelectro-on-air-guest-mix-25ian/']
+        ],
+        'socials': {
+            'facebook': 'DJIanLin'
+        }
     }
 };
