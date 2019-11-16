@@ -1,7 +1,7 @@
 let djs = {
     'Dasha Anderson': {
         'bio': 'Breakthrough Events resident who loves anything with good drums – drum and bass, techno, house, breakbeat, electro. \
-         Aerial has done guest appearances at 1984, Zellig Sound, Durfest and Fractal, playing a wide range of electronic music genres. ',
+                Aerial has done guest appearances at 1984, Zellig Sound, Durfest and Fractal, playing a wide range of electronic music genres. ',
         'img': 'assets/djimg/Dasha Anderson.png',
         'genres': [
             'drum and bass',
@@ -70,7 +70,7 @@ let djs = {
     
     'Emily Kelly': {
         'bio': 'Emily DJs a bit of everything, and has played at Durham events + college balls in the past. \
-         She’s also involved in the running of Slink and Continental nights in Durham and Newcastle',
+                She’s also involved in the running of Slink and Continental nights in Durham and Newcastle',
         'img': 'assets/djimg/Emily.jpg',
         'genres': [
             'disco',
@@ -133,8 +133,8 @@ let djs = {
     
     'Andy Smith': {
         'bio': 'Andy Smith (aka Orifice) is a resident DJ and organiser of 1984, \
-                Durhams only dedicated techno party. Andy has earned a reputation \
-                as a predominatly vinyl only DJ whose sets consist of a blend of electro, \
+                Durham\'s only dedicated techno party. Andy has earned a reputation \
+                as a predominantly vinyl only DJ whose sets consist of a blend of electro, \
                 techno, breakbeat and industrial. Andy has played at various clubs across the \
                 UK with the likes of Dr. Joseph, Sybil, Blasha & Allatt, Leah Floyeurs and Surgeon. \
                 For booking information please email orificedj@gmail.com',
@@ -190,10 +190,10 @@ let djs = {
     },
 
     'Ian Lin': {
-        'bio': 'Ian Lin, a DJ & promoter from Taiwan\'s indie label \
-                "Minelectro Inc."  As the founder of National Cheng Kung University \
+        'bio': 'Ian Lin is a DJ & promoter from Taiwanese indie label \
+                "Minelectro Inc." As the founder of National Cheng Kung University \
                 Electronic Music Club, he won the love of the crowd in all kinds of \
-                parties, bars and music scene with nice groovy tunes and surprising \
+                parties, bars and music scenes with groovy tunes and a surprising \
                 music selection. Now, he\'s ready to bring these great vibes here to the UK!',
         'img': 'assets/djimg/IanLin.jpg',
         'genres': [
