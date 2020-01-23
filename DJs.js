@@ -71,7 +71,7 @@ let djs = {
     'Emily Kelly': {
         'bio': 'Emily DJs a bit of everything, and has played at Durham events + college balls in the past. \
                 She’s also involved in the running of Slink and Continental nights in Durham and Newcastle',
-        'img': 'assets/djimg/Emily.jpg',
+        'img': 'assets/djimg/EmilyK.jpg',
         'genres': [
             'disco',
             'house',
