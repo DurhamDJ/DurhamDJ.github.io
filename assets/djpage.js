@@ -4,11 +4,11 @@
  */
 
 // shuffle DJs, initialise variables
-let djNames = shuffle(Object.keys(djs));
+const djNames = shuffle(Object.keys(djs));
 let genres = [];
-let list = $('#dj-list');
+const listDiv = $('#dj-list');
 let selected = 'all';
-let socialMappings = {
+const socialMappings = {
     'facebook': [
         'fab fa-facebook-f',
         'https://www.facebook.com/'
@@ -24,6 +24,10 @@ let socialMappings = {
     'youtube': [
         'fab fa-youtube',
         'https://www.youtube.com/'
+    ],
+    'hearthis.at': [
+        'No icon',
+        'https://hearthis.at/'
     ]
 }, supportedSocials = Object.keys(socialMappings);
 
@@ -32,7 +36,7 @@ for (let i of djNames) {
     let dj = djs[i];
 
     // add them to the page
-    list.append('<div class="dj-card col"><div class="row"><div class="col-md-3 dj-img"><svg width="4" height="3"></div><div class="col-md-9 dj-content"><div class="row content-row"><div class="col-10"><h3></h3><div class="dj-bio"><p></p></div><ul class="genre-list"></ul><div class="social-container"></div></div><div class="col-2 dropdown-container"><img src="assets/img/dropdown.svg" class="music-expand" onclick="toggleMusic(this)"></div></div></div></div><div class="dj-music-container"><div class="dj-music"></div></div></div>');
+    listDiv.append(emptyDJCard);
     let card = $('#dj-list .dj-card:last-child');
     dj.card = card;
     card.find('.dj-content h3').html(i);
@@ -54,18 +58,10 @@ for (let i of djNames) {
     }
     else {
         for (j of dj.music) {
-            if (j[0] == 'mixcloud') {
-                musicDiv.append('<iframe height="120" scrolling="no" frameborder="0" source="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=' + j[1] + '">Loading...</iframe>');
-            }
-            else if (j[0] == 'soundcloud') {
-                musicDiv.append('<iframe height="120" scrolling="no" frameborder="no" allow="autoplay" source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/' + j[1] + '&color=%23a32691&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">Loading...</iframe>');
-            }
-            else if (j[0] == 'youtube') {
-                musicDiv.append('<iframe height="400" src="https://www.youtube-nocookie.com/embed/' + j[1] + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-            }
+            musicDiv.append(generateFrame(j));
         }
-        musicDiv.css('margin-top', '-' + musicDiv.outerHeight() + 'px');
     }
+    musicDiv.css('margin-top', '-' + musicDiv.outerHeight() + 'px');
 
     // add social links
     let socialsDiv = card.find('.social-container');

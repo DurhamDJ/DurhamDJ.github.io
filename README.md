@@ -40,7 +40,9 @@ Each DJ's data should be of the form as follows:
         ],
         'music': [          // any mixes or tracks that need to be shown for the DJ
             ['soundcloud', 'SOUNDCLOUD ID'],
-            ['mixcloud', 'MIXCLOUD/ID']
+            ['mixcloud', 'MIXCLOUD ID'],
+            ['youtube', 'YOUTUBE ID'],
+            ['hearthis.at', 'HEARTHIS.AT ID']
         ],
         'socials': {
             'facebook': 'FACEBOOK ID',
@@ -71,8 +73,8 @@ You should end up with something like this:
         but you can split it like this.'
 ```
 
-### Getting Mixcloud / Soundcloud IDs
-In order to add mixes or tracks to a DJ's information, you need to get their IDs.
+### Getting Embed IDs
+In order to add mixes or tracks to a DJ's information, you need to get the ID of that information so it can be embedded in their music box.
 
 #### Mixcloud
 If you visit the mix, inside the address bar will be something along the lines of `https://mixcloud.com/name/mix-name/possibly-other-information`.
@@ -96,6 +98,11 @@ For a YouTube embed, get the address of the video. It will look like `https://ww
 Just use the section that's like `y6120QOlsfU`, at the end of the main URL.
 
 The entry in `'music'` should look like `['youtube': 'y6120QOlsfU']`.
+
+#### hearthis.at
+For a [hearthis.at](https://hearthis.at) embed, visit the mix and click 'Social'. You should see a 'Short Link' field that looks like `https://hearthis.at/MIX-ID/`. That `MIX-ID` is what you want to use.
+
+The entry in `'music'` should look like `['hearthis.at': 'MIX-ID']`.
 
 ### Social Media
 Social media links are included in a similar way to music embeds, except that there should be at most one of each type for each DJ. They are included as icons in the top corner of the DJ's bio box. Currently supported are:
