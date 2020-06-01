@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Righteous&display=swap&subset=latin-ext");
 body {
   background-color: #666666;
-  background: url("assets/img/cdj.jpg") no-repeat center center fixed;
+  background: url("/assets/img/cdj.jpg") no-repeat center center fixed;
   background-size: cover;
   margin: 0px;
   color: #ffffff;
