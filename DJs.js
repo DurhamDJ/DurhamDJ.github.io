@@ -88,9 +88,9 @@ let djs = {
     },
  
     'Harry Whittaker': {
-        'bio': 'DJ Society President and co-founder of breakthrough events. \
-                With guest DJ appearances at Zellig Sound and Fractal and a residency at Rotate \
-                Harry Whittaker can play a range of music suitable for house parties and club nights.',
+        'bio': 'Co-founder of Breakthrough Events, with guest DJ appearances at Zellig \
+                Sound and Fractal and a residency at Rotate, Harry Whittaker can play a \
+                range of music suitable for house parties and club nights.',
         'img': 'assets/djimg/Harry.jpg',
         'genres': [
             'drum and bass',
