@@ -227,8 +227,8 @@ let djs = {
             ['mixcloud', '/JakeVerse/tech-housetechno-mix-128-145bpm-260620/']
         ],
         'socials': {
-            'youtube': 'channel/UCMBLTWhZ02kpzS4qVLdat-w',
-            'facebook': 'jakeverseuk'
+            'facebook': 'jakeverseuk',
+            'youtube': 'channel/UCMBLTWhZ02kpzS4qVLdat-w'
         }
     }
 };
