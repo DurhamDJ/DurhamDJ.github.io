@@ -33,7 +33,7 @@ else {
     $('#cookie-toast').toast('show');
 }
 function gaOptout() {
-    document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+    document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; sameSite=Lax';
     window[disableStr] = true;
 
     $('#cookie-toast').css('display', 'none');
@@ -41,7 +41,7 @@ function gaOptout() {
     return 'Succesfully opted you out of Google Analytics';
 }
 function gaOptin() {
-    document.cookie = disableStr + '=false; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+    document.cookie = disableStr + '=false; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; sameSite=Lax';
     
     $('#cookie-toast').css('display', 'none');
     $('#cookie-toast').toast('hide');
