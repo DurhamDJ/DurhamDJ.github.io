@@ -12,7 +12,7 @@ let djs = {
         'music': [
             ['mixcloud', '/djaerial/aerial-viper-1/']
         ]
-    },    
+    },
     
     'Aidan Williamson': {
         'bio': 'deadW is a very experienced DJ with an event runner & DJ residency at klute! He has two sides to the W - \
@@ -33,7 +33,7 @@ let djs = {
             ['mixcloud', '/deadW/the-psy-trance-mix/'],
             ['mixcloud', '/deadW/hard-mix-hardstyle-hardcore-rawstyle-psystyle/']
         ]
-    },       
+    },
   
     'Brett Garrett': {
         'bio': 'Brėtt has held down regular sets throughout the city ranging in styles \
@@ -42,7 +42,7 @@ let djs = {
                 the client throws at him with regular gigs for the international societies. \
                 This year promises to be busy, by keeping the people of durham grooving with \
                 multiple gigs throughout both the city and surrounding areas.',
-        'img': 'assets/djimg/Brett3.png',
+        'img': 'assets/djimg/Brett.png',
         'genres': [
         ],
         'music': [
@@ -66,12 +66,12 @@ let djs = {
             ['soundcloud', '662385164'],
             ['soundcloud', '668394668']
         ]
-    },      
+    },
     
     'Emily Kelly': {
         'bio': 'Emily DJs a bit of everything, and has played at Durham events + college balls in the past. \
                 She’s also involved in the running of Slink and Continental nights in Durham and Newcastle',
-        'img': 'assets/djimg/EmilyK.jpg',
+        'img': 'assets/djimg/Emily.jpg',
         'genres': [
             'disco',
             'house',
@@ -85,23 +85,22 @@ let djs = {
             ['soundcloud', '712900417']
 
         ]
-    },     
-    
+    },
  
     'Harry Whittaker': {
         'bio': 'DJ Society President and co-founder of breakthrough events. \
                 With guest DJ appearances at Zellig Sound and Fractal and a residency at Rotate \
                 Harry Whittaker can play a range of music suitable for house parties and club nights.',
-        'img': 'assets/djimg/Harry2.jpg',
+        'img': 'assets/djimg/Harry.jpg',
         'genres': [
             'drum and bass',
             'jungle',
             'house'
         ],
         'music': [
-                    ['soundcloud', '597381498'],
+            ['soundcloud', '597381498'],
         ]
-    },    
+    },
     
     'Laszlo Karsai': {
         'bio': 'Laszlo Karsai aka Laszlo has been making the Durham DJ scene his home \
@@ -119,7 +118,7 @@ let djs = {
             ['mixcloud', '/LO_LA/the-sound-of-swing/'],
             ['mixcloud', '/LO_LA/journey-1-from-house-to-techno/']
         ]
-    },    
+    },
     
     'Ryan Khan': {
         'bio': 'Co-organizer and DJ of the infamous drum and bass night Zellig sound.',
@@ -209,6 +208,27 @@ let djs = {
         ],
         'socials': {
             'facebook': 'DJIanLin'
+        }
+    },
+
+    'Jake Roberts': {
+        'bio': 'Jake has been DJ\'ing as jakeverse for around 5 years, first privately, \
+                then as a new, regular member of the DDJS at the weekly open decks. His music \
+                selection and style of mixing is unique, comfortably mixing anything from groovy \
+                tech house to hard hitting techno. Jake also produces the odd tech house tune, \
+                which he has no problem playing in front of a crowd.',
+        'img': 'assets/djimg/Jake.jpg',
+        'genres': [
+            'tech house',
+            'techno'
+        ],
+        'music': [
+            ['soundcloud', '829536616'],
+            ['mixcloud', '/JakeVerse/tech-housetechno-mix-128-145bpm-260620/']
+        ],
+        'socials': {
+            'youtube': 'channel/UCMBLTWhZ02kpzS4qVLdat-w',
+            'facebook': 'jakeverseuk'
         }
     }
 };
