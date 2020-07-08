@@ -9,7 +9,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
+#navbar {
   background-color: #181818;
   -webkit-box-shadow: 0px 0px 20px -5px #000000;
           box-shadow: 0px 0px 20px -5px #000000;
@@ -20,7 +20,7 @@ body {
   z-index: 20;
 }
 
-.navbar .navbar-brand {
+#navbar #navbar-brand {
   height: 120px;
   -webkit-transition: height ease 0.4s;
   transition: height ease 0.4s;
