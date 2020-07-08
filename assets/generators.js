@@ -35,7 +35,6 @@ frameFunctions = {
 
 function generateFrame([platform, id]) {
     const frame = frameFunctions[platform](id);
-    console.log(`hello ${frame}`);
     return frame;
 }
 

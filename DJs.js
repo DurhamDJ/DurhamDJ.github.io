@@ -159,8 +159,7 @@ let djs = {
         'img': 'assets/djimg/Barnaby.jpg',
         'genres': [
             'drum and bass',
-            'ambient',
-            'hip-hop'
+            'ambient'
         ],
         'music': [
             ['mixcloud', '/barnabycollins/lockdown-livestreams-2-entering-the-cool-zone-with-barnaby-and-dominic/'],

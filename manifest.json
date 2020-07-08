@@ -3,12 +3,12 @@
     "name": "Durham DJ Society",
     "icons": [
         {
-            "src": "/assets/img/logo_app_192.png",
+            "src": "/assets/img/logo_192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/assets/img/logo_app_512.png",
+            "src": "/assets/img/logo_512.png",
             "type": "image/png",
             "sizes": "512x512"
         }

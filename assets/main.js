@@ -1,16 +1,15 @@
-// register service worker to cache content
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/serviceworker.js', {scope: '/'}).then(function(registration) {
-          }, /*catch*/ function(error) {
-            console.log('Service worker registration failed:', error);
-        });
-    });
+function checkScroll() {
+    if ($(window).scrollTop() !== 0) {
+        $('.navbar-brand').css('height', '80px');
+    }
+    else {
+        $('.navbar-brand').css('height', '120px');
+    }
 }
-
+$(window).scroll(checkScroll);
+checkScroll();
 
 // code to control user opt-in / opt-out for Google Analytics
-
 $('#GAOptin').click((e) => {
     e.preventDefault();
     gaOptin();
@@ -52,3 +51,14 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', gaProperty, {'anonymize_ip': true});
+
+
+// register service worker to cache content
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/serviceworker.js', {scope: '/'}).then(registration => {
+          }, /*catch*/ error => {
+            console.log('Service worker registration failed:', error);
+        });
+    });
+}
