@@ -24,11 +24,11 @@ const socialMappings = {
     'youtube': [
         'fab fa-youtube',
         'https://www.youtube.com/'
-    ],
+    ]/*,
     'hearthis.at': [
         'No icon',
         'https://hearthis.at/'
-    ]
+    ]*/
 }, supportedSocials = Object.keys(socialMappings);
 
 // for each DJ

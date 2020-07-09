@@ -7,27 +7,27 @@ Durham DJ Society Website
 ## Updating the website
 In order to update the website, you first need permission to change it. This can be obtained by contacting the president and/or publicity officer of the society.
 
-Changes are committed using Git, a version control system. There are several methods you can use for this:
+Changes are committed using Git, a version control system. It works similarly to OneDrive or Google Drive, except that changes get named and uploaded manually so we can keep track of changes more easily. There are several methods you can use for this:
 
 ### GitHub website
-The easiest way to make changes is to use the GitHub website. You can do this by navigating to the file you want to change, and clicking the pencil in the top right. You can then update the file in the web UI, and use the form at the bottom of the page to name and submit your commit.
+The fastest way to make changes is to use the GitHub website directly. You can do this by navigating to the file you want to change, and clicking the pencil in the top right. You can then update the file in the web UI, and use the form at the bottom of the page to name and submit your commit.
 
 This isn't a great way to do things long-term, but if you need to make a small change and know what you're doing it's pretty good for that.
 
 ### [GitHub Desktop](https://desktop.github.com/)
-GitHub provide a desktop application that makes syncing commits etc easy. You log into the app and download ('clone') a copy of the project. You can then change your local copy, and use the app to push your changes to the website. It works similarly to OneDrive or Google Drive, except that syncing happens manually so we can keep track of changes more easily.
+GitHub provide a desktop application that makes syncing commits etc easy. You log into the app and download ('clone') a copy of the project. You can then change your local copy, and use the app to push your changes to the website.
 
 This is the method that I'd recommend if you're new to using GitHub. It's particularly good in combination with a good code editor like [Atom](https://atom.io/) which will provide useful features to make updating code easier.
 
 ### IDEs
 Many Integrated Development Environment (IDEs) provide an all-in-one workflow that allows you to edit code and push changes all in one application. I like [Visual Studio Code](https://code.visualstudio.com/), but [Atom](https://atom.io/) (with the additional [GitHub package](https://github.atom.io/)) is also popular. Using these may involve having to clone the package manually using the command line, and you might also need to install [Git](https://git-scm.com/downloads) separately.
 
-This is the best method in my opinion, but takes quite a bit of setup.
+This is the best method in my opinion, but takes a bit more setup to start with.
 
 ## Updating DJ Info
 Data containing the bios, mixes etc of DJs is stored in `DJs.js`.
 
-Each DJ's data should be of the form as follows:
+Each DJ's data should look like this:
 
 ```js
     'DJ NAME': {        // name of DJ
@@ -51,29 +51,96 @@ Each DJ's data should be of the form as follows:
     }
 ```
 
-This data is stored as a JavaScript structure. That means that:
+This data is stored as a JavaScript structure. `{}` denotes an object, which works like a dictionary with lots of `name: value` pairs, and `[]` denotes an array, which is simply a series of values. Both of these structures can contain other structures inside themselves, which is how we can build more useful data structures like the one above.
 
-* `{}` denotes an object (a set of key-value pairs, for example `'bio': 'DJ BIO'`)
-* `[]` denotes an array (a list of values)
+JavaScript doesn't care about spaces and new lines in these structures, so the above structure can simply be written on one line. It is split across several lines and indented like you see to aid with legibility, but it may be useful to remember that the following pairs of structures are equivalent:
+```js
+[
+    item,
+    item,
+    item
+]
 
-Bear in mind that both of these require commas after every element inside them except the last item. If you forget to add commas, the code will break.
+[item, item, item]
+```
 
-### DJ Images
+```js
+{
+    key: value,
+    key: value,
+    key: value
+}
 
-DJ images are cropped to a 4:3 aspect ratio when they're displayed to make the site more consistent. That means only the middle of the image will be visible in images taller or wider than 4:3, so make sure any important content (eg the DJ's face) is in the middle.
+{key: value,  key: value,  key: value}
+```
 
-### Long bios
+Bear in mind that both of these require commas (`,`) to separate items. If you forget to add commas, the code will break.
+
+## Information to store about each DJ
+
+- [Name](#name)
+- [Biography](#biography)
+- [Image](#image)
+- [Music Embeds](#music-embeds)
+- [Social Media Links](#social-media-links)
+
+
+### Name
+
+A DJ's name is the 'key' for the structure containing their information inside the 'main' object. That is, the main object looks like:
+
+```js
+{
+    "DJ Name 1": {
+        ...info
+    },
+    "DJ Name 2": {
+        ...info
+    },
+    "DJ Name 3": {
+        ...info
+    }
+}
+```
+
+A DJ's name can be any string of characters. It's preferable to keep it short if possible. For example, 'Joe Bloggs' or 'Joe "JoeB" Bloggs'.
+
+### Biography
+The biography should be a short paragraph about the DJ, describing what experience they have, what their skills are and what kinds of events they are looking to perform at.
+
 If a bio is too long to fit on a screen, you can split it across multiple lines to make it more legible. In order to do this:
 * Insert a backslash (`\`) where you want to start a new line
 * Put in a new line directly after the backslash
 
+More generally, the backslash (`\`) can be used to 'escape' characters that you don't want to affect how the biography is read. For example, if a biography has an apostrophe in, you don't want to end up with a situation like this:
+```js
+'bio': 'I can't and won't play liquid jazz gabba. It's just a fad.'
+```
+
+Instead, you can use the backslash to specify which apostrophes should be ignored:
+```js
+'bio': 'I can\'t and won\'t play liquid jazz gabba. It\'s just a fad.'
+```
+
 You should end up with something like this:
 ```js
 'bio': 'This is a pretty long biography, \
-        but you can split it like this.'
+        but you\'ll be able to split it \
+        like this.'
 ```
 
-### Getting Embed IDs
+### Image
+
+DJ images are cropped to a 4:3 aspect ratio when they're displayed to make the site more consistent. That means only the middle of the image will be visible in images taller or wider than 4:3, so make sure any important content (eg the DJ's face) is in the middle.
+
+Images should be placed in the folder `assets/djimg`. If you're replacing an existing image, remember to remove the old one as they can get pretty cluttered otherwise.
+
+Once you've added an image to the folder, you just need to point to it in the data structure. This can be done by just putting the file path (eg `'assets/djimg/DJKhaled.jpg'`) into the `img` field for that DJ. You should end up with something like:
+```js
+'img': 'assets/djimg/JoeBloggs.jpg'
+```
+
+### Music Embeds
 In order to add mixes or tracks to a DJ's information, you need to get the ID of that information so it can be embedded in their music box.
 
 #### Mixcloud
@@ -104,12 +171,14 @@ For a [hearthis.at](https://hearthis.at) embed, visit the mix and click 'Social'
 
 The entry in `'music'` should look like `['hearthis.at': 'MIX-ID']`.
 
-### Social Media
-Social media links are included in a similar way to music embeds, except that there should be at most one of each type for each DJ. They are included as icons in the top corner of the DJ's bio box. Currently supported are:
+### Social Media Links
+Social media links are included in a similar way to music embeds, except that there should be at most one of each type for each DJ. They are included as icons in the top-right corner of the DJ's bio box. Currently supported are:
 
 - Facebook
 - Mixcloud
 - Soundcloud
 - YouTube
 
-For all of these, first visit the user's page. Next, copy the user's ID from the end of the URL (for example from `https://www.example.com/coolguy?maybe-some-other-info` you want to use just `coolguy`). However, YouTube often has URLs in the format of `https://www.youtube.com/urltype/username?maybe-other-info`. In this case, use `urltype/username`.
+For all of these except YouTube, first visit the user's page. Next, copy the user's ID from the end of the URL (for example from `https://www.example.com/coolguy?maybe-some-other-info` you want to use just `coolguy`).
+
+YouTube needs to work a bit differently because it has several different kinds of URLs, all in the format of `https://www.youtube.com/urltype/username?maybe-other-info`. In this case, follow the steps above but use `urltype/username` rather than just `username`.
