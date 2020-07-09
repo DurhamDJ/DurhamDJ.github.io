@@ -177,6 +177,12 @@ footer {
           flex: 1;
 }
 
+#demo-content .demo-row .demo-info ul {
+  font-weight: bold;
+  list-style: none;
+  padding: 0;
+}
+
 #demo-content .demo-row .demo-info code {
   margin-bottom: 20px;
 }
