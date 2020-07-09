@@ -79,6 +79,44 @@ h1, h2 {
   text-align: center;
 }
 
+.toast {
+  text-align: justify;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: #000000;
+  display: none;
+}
+
+footer {
+  background-color: #222222;
+  padding: 1% 0px;
+}
+
+@media (max-width: 767.9px) {
+  .navbar {
+    height: 60px;
+  }
+  .navbar .navbar-brand {
+    height: 40px;
+  }
+  body {
+    font-size: 14px;
+  }
+  #header-content h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  #header-content {
+    height: 300px;
+  }
+}
+
 #society-intro {
   padding: 1% 0px;
   background-color: rgba(10, 10, 10, 0.6);
@@ -235,47 +273,12 @@ h1, h2 {
   color: #aaaaaa;
 }
 
-.toast {
-  text-align: justify;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  color: #000000;
-  display: none;
-}
-
-footer {
-  background-color: #222222;
-  padding: 1% 0px;
-}
-
 @media (max-width: 767.9px) {
-  .navbar {
-    height: 60px;
-  }
-  .navbar .navbar-brand {
-    height: 40px;
-  }
-  body {
-    font-size: 14px;
-  }
-  #header-content h1 {
-    font-size: 60px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 22px;
-  }
   .content-row {
     padding-top: 15px;
-  }
-  #header-content {
-    height: 300px;
   }
   .genre-list li {
     font-size: 14px;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=index.css.map */
