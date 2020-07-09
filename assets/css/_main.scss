@@ -7,8 +7,7 @@ html {
 }
 
 body {
-    background-color: #666666;
-    background: url("../img/cdj.jpg") no-repeat center center fixed;
+    background: #111111 url("../img/cdj.jpg") no-repeat center center fixed;
     background-size: cover;
     margin: 0px;
     color: #ffffff;
@@ -41,8 +40,17 @@ body {
 
             li {
                 display: inline;
+
+                &.active {
+                    font-weight: bold;
+                }
+
                 &:not(:first-child) {
                     margin-left: 20px;
+                }
+
+                a {
+                    color: #ffffff;
                 }
             }
         }
@@ -58,10 +66,26 @@ h1, h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 300px;
     h1 {
         font-size: 80px;
-        text-align: center;
+        text-align: left;
+    }
+}
+
+.page-content {
+    padding: 1% 0px;
+    background-color: rgba(10, 10, 10, 0.6);
+    text-align: justify;
+    margin-bottom: 100px;
+
+    p {
+        margin: 5px 0;
+    }
+
+    a {
+        font-weight: bold;
+        color: #ffffff;
     }
 }
 

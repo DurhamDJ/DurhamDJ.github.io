@@ -1,0 +1,33 @@
+@import './main';
+
+#demo-content {
+    position: sticky;
+    top: 100px;
+
+    .demo-row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .demo-widget {
+            width: 270px;
+            height: 270px;
+
+            .demo-frame {
+                position: absolute;
+                transform: scale(0.5);
+                transform-origin: 0 0;
+                border: 0;
+            }
+        }
+        
+        .demo-info {
+            padding-left: 20px;
+            flex: 1;
+
+            code {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

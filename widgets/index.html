@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- junglist massive -->
+        <!-- THIS WORK IS LICENSED UNDER THE GPL 3.0 LICENSE BY DURHAM UNIVERSITY DJ SOCIETY. -->
+        <!-- PLEASE SEE https://github.com/DurhamDJ/DurhamDJ.github.io/blob/master/LICENSE FOR MORE INFORMATION. -->
+        <style>@keyframes spinner{0%{transform:rotate(45deg)}100%{transform:rotate(225deg)}}@keyframes bar-slide{0%{transform:translateX(0)}100%{transform:translateX(-35px)}}#spinner{transform-origin:center 65%;animation:spinner .9s ease infinite}#bars{animation:bar-slide .9s ease infinite}#load-cover{position:fixed;background-color:#2b2b2b;top:0;left:0;bottom:0;right:0;display:flex;justify-content:center;align-items:center;transition:opacity 1s;z-index:40}.white-stroke{fill:transparent;stroke-width:10;stroke:#fff}.white-fill{fill:#fff}body{overflow-x:hidden}</style>
+
+        <title>Stream Widgets | Durham DJ Society</title>
+
+        <!-- Metadata incoming -->
+        <link rel="canonical" href="https://DurhamDJ.github.io/widgets">
+        <meta name="description" content="Use our widgets on your livestream!">
+        <meta name="keywords" content="Durham, DJ, Society, stream, broadcast, livestream">
+        <meta name="author" content="DDJS Exec">
+        <meta name="geo.region" content="GB">
+        <meta name="theme-color" content="#000000">
+        <meta name="apple-mobile-web-app-title" content="DDJS">
+        <meta name="image" content="https://DurhamDJ.github.io/assets/img/social_banner.png">
+
+        <meta property="og:title" content="Stream Widgets | Durham DJ Society">
+        <meta property="og:description" content="Use our stream widgets on your broadcast!">
+        <meta property="og:url" content="https://DurhamDJ.github.io/widgets">
+        <meta property="og:site_name" content="Durham DJ Society">
+        <meta property="og:image" content="https://DurhamDJ.github.io/assets/img/social_banner.png">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en_GB">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@durhamDJsoc">
+        <meta name="twitter:creator" contnet="@durhamDJsoc">
+
+        <meta itemprop="name" content="Stream Widgets | Durham DJ Society">
+        <meta itemprop="url" content="https://DurhamDJ.github.io/widgets">
+        <meta itemprop="email" content="dds8djs@durham.ac.uk">
+
+        <!-- Webmaster verification codes -->
+        <meta name="google-site-verification" content="Aq76DepBqMLYBoRrDuDdNOUZq9IkVe2tH5nyP2q75oc" />
+        <meta name="msvalidate.01" content="3933F920716C8ECDF849948586B1BCAC" />
+
+        <link rel="manifest" href="/manifest.json">
+        <!-- Metadata finished -->
+
+        <!-- Assets to load in -->
+        <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon"/>
+        <link rel="apple-touch-icon" href="/assets/img/logo_512.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/widgets.css">
+    </head>
+    <body>  
+        <div id="top"></div>
+        <!-- navbar -->
+        <nav id="navbar">
+            <div class="container">
+                <a href="/"><img src="/assets/img/logo_200_transparent.png" id="navbar-brand"></a>
+                <ul id="main-nav">
+                    <li class="active"><a href="#top">Widgets</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- header -->
+        <div id="header-content">
+            <h1>Livestream Widgets</h1>
+        </div>
+
+        <div class="page-content">
+            <div class="container">
+                <p>On this page is a set of widgets you can use on DJ livestreams. To use a widget, just create a new browser source in your broadcasting software of choice with the given width and height for that widget.</p>
+                <p>They are all large by default to make sure they look good at any size - to scale them down, use the transform options in your broadcasting software.</p>
+            </div>
+        </div>
+
+
+        <div id="demo-content" class="page-content">
+            <div class="container">
+                <div class="demo-row">
+                    <div>
+                        <div class="demo-widget">
+                            <iframe class="demo-frame" scrolling="no" src="https://DurhamDJ.github.io/widgets/logo_animation?interval=5000" width="540" height="540"></iframe>
+                        </div>
+                    </div>
+                    <div class="demo-info">
+                        <h2>Logo Spinner</h2>
+                        <code>https://DurhamDJ.github.io/widgets/logo_animation</code>
+                        <p>This widget rotates at a regular interval. By default this interval is 60 seconds, but here it is set to 5 seconds for demonstration purposes.</p>
+                        <p>The interval can be customised by adding a parameter called <code>interval</code> to its URL. This should be given the value of the number of seconds it should wait between spins.</p>
+                        <p>For example, to get a 30 second interval, the end of the URL would look like <code>.../logo_animation?interval=30000</code>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div id="footer-notice">
+                    &copy; Durham DJ Society 2019-2020. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <div class="toast" id="cookie-toast" role="alert" aria-live="assertive" aria-atomic="true" data-animation="true" data-autohide="false">
+            <div class="toast-header">
+                <strong class="mr-auto">Cookie Notice</strong>
+                <a href="#" id="GAOptin">Accept cookies</a>
+            </div>
+            <div class="toast-body">
+                We use Google Analytics to collect anonymised information about how our website is performing. You can opt out on just this website by clicking <a href="#" id="GAOptout">here</a>, or everywhere by installing the <a href="https://tools.google.com/dlpage/gaoptout">Google Analytics Opt-out Browser Add-on</a>.
+            </div>
+        </div>
+
+        <!-- JS code -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/63a0232dab.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58923240-3"></script>
+        <script src="/assets/main.js"></script>
+    </body>
+</html>

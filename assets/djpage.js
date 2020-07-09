@@ -6,7 +6,7 @@
 // shuffle DJs, initialise variables
 const djNames = shuffle(Object.keys(djs));
 let genres = [];
-const listDiv = $('#dj-list');
+const listDiv = $('#dj-list-container');
 let selected = 'all';
 const socialMappings = {
     'facebook': [
@@ -109,10 +109,6 @@ for (j of genres) {
 window.onload = () => {
     // hide the CDJ loading spinner
     $('#load-cover').css('opacity', '0');
-    // start loading iframes
-    /*$('iframe').each((index, elem) => {
-        $(elem).attr('src', $(elem).attr('source'));
-    });*/
     setTimeout(removeLoad, 1000);
 };
 

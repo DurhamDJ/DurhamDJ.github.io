@@ -2,6 +2,18 @@
 
 
 
+#header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+}
+
+
 #society-intro {
     padding: 1% 0px;
     background-color: rgba(10, 10, 10, 0.6);
@@ -29,7 +41,7 @@
     }
 }
 
-#main-content {
+#dj-list {
     margin-top: 50px;
     padding-top: 10px;
     padding-bottom: 60px;

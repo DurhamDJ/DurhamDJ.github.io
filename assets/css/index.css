@@ -5,8 +5,7 @@ html {
 }
 
 body {
-  background-color: #666666;
-  background: url("../img/cdj.jpg") no-repeat center center fixed;
+  background: #111111 url("../img/cdj.jpg") no-repeat center center fixed;
   background-size: cover;
   margin: 0px;
   color: #ffffff;
@@ -52,8 +51,16 @@ body {
   display: inline;
 }
 
+#navbar .container ul li.active {
+  font-weight: bold;
+}
+
 #navbar .container ul li:not(:first-child) {
   margin-left: 20px;
+}
+
+#navbar .container ul li a {
+  color: #ffffff;
 }
 
 h1, h2 {
@@ -71,12 +78,28 @@ h1, h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 400px;
+  height: 300px;
 }
 
 #header-content h1 {
   font-size: 80px;
-  text-align: center;
+  text-align: left;
+}
+
+.page-content {
+  padding: 1% 0px;
+  background-color: rgba(10, 10, 10, 0.6);
+  text-align: justify;
+  margin-bottom: 100px;
+}
+
+.page-content p {
+  margin: 5px 0;
+}
+
+.page-content a {
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .toast {
@@ -117,6 +140,24 @@ footer {
   }
 }
 
+#header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 400px;
+}
+
+#header-content h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
 #society-intro {
   padding: 1% 0px;
   background-color: rgba(10, 10, 10, 0.6);
@@ -151,14 +192,14 @@ footer {
   border-radius: 3px;
 }
 
-#main-content {
+#dj-list {
   margin-top: 50px;
   padding-top: 10px;
   padding-bottom: 60px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-#main-content h2 {
+#dj-list h2 {
   margin: 0px;
 }
 
