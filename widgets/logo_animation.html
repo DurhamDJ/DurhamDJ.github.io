@@ -16,13 +16,13 @@
     <script>
         const params = new URLSearchParams(window.location.search);
 
-        const interval = params.has('interval') ? params.get('interval') : 60000;
+        const interval = params.has('interval') ? params.get('interval') : 60;
 
         var vid = document.getElementById("main");
 
         vid.play();
 
-        setInterval(vid.play.bind(vid), interval);
+        setInterval(vid.play.bind(vid), interval*1000);
     </script>
 </body>
 </html>
