@@ -141,60 +141,7 @@ footer {
   }
 }
 
-#demo-content {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 100px;
+#society-about {
+  font-size: 17px;
 }
-
-#demo-content .demo-row {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#demo-content .demo-row .demo-widget {
-  width: 270px;
-  height: 270px;
-}
-
-#demo-content .demo-row .demo-widget .demo-frame {
-  position: absolute;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  border: 0;
-}
-
-#demo-content .demo-row .demo-info {
-  padding-left: 20px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-#demo-content .demo-row .demo-info ul {
-  font-weight: bold;
-  list-style: none;
-  padding: 0;
-}
-
-#demo-content .demo-row .demo-info code {
-  margin-bottom: 20px;
-}
-
-#demo-content .demo-row .demo-info i.fa-copy {
-  cursor: pointer;
-  -webkit-transition: color 0.1s;
-  transition: color 0.1s;
-}
-
-#demo-content .demo-row .demo-info i.fa-copy:active {
-  color: #dddddd;
-}
-/*# sourceMappingURL=widgets.css.map */
+/*# sourceMappingURL=about.css.map */
