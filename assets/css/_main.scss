@@ -101,6 +101,27 @@ h1, h2 {
 footer {
     background-color: #222222;
     padding: 1% 0px;
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        #footer-notice {
+            flex: 1;
+        }
+
+        #footer-socials {
+            font-size: 20px;
+
+            a {
+                color: #ffffff;
+
+                &:hover {
+                    color: #dddddd;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 767.9px) {
