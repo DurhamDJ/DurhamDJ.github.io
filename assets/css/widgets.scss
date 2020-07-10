@@ -34,6 +34,15 @@
             code {
                 margin-bottom: 20px;
             }
+
+            i.fa-copy {
+                cursor: pointer;
+                transition: color 0.1s;
+
+                &:active {
+                    color: #dddddd;
+                }
+            }
         }
     }
 }

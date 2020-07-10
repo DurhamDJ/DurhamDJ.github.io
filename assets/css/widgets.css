@@ -186,4 +186,14 @@ footer {
 #demo-content .demo-row .demo-info code {
   margin-bottom: 20px;
 }
+
+#demo-content .demo-row .demo-info i.fa-copy {
+  cursor: pointer;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+
+#demo-content .demo-row .demo-info i.fa-copy:active {
+  color: #dddddd;
+}
 /*# sourceMappingURL=widgets.css.map */
