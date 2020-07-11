@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Alata', sans-serif;
+        }
+        #tag-container {
+            position: absolute;
+            top: 70px;
+            left: 270px;
+            z-index: -10;
+        }
+        #nametag {
+            height: 400px;
+            padding-left: 300px;
+            background-color: rgba(32, 32, 32, 0.8);
+            border-radius: 0 50px 50px 0;
+            box-shadow: 0 0 30px -10px rgba(0, 0, 0, 1.0);
+            margin-right: 50px;
+        }
+        #nametag-text {
+            font-size: 300px;
+            line-height: 360px;
+            color: #ffffff;
+            padding-right: 100px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div id="tag-container">
+        <div id="nametag">
+            <div id="nametag-text">
+                <!-- populated by JS -->
+            </div>
+        </div>
+    </div>
+    <video id="main" width="540" height="540">
+        <source src="logo_animation.webm" type="video/webm">
+    </video>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const interval = params.has('interval') ? params.get('interval') : 60;
+        const name = params.has('name') ? params.get('name') : 'Name not set';
+
+        document.getElementById('nametag-text').innerHTML = name;
+
+        var vid = document.getElementById('main');
+
+        vid.play();
+
+        setInterval(vid.play.bind(vid), interval*1000);
+    </script>
+</body>
+</html>
