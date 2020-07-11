@@ -73,11 +73,11 @@
             </div>
         </div>
 
-        <div id="demo-content" class="page-content">
+        <div class="page-content demo">
             <div class="container">
                 <div class="demo-row">
                     <div>
-                        <div class="demo-widget">
+                        <div id="demo-logo" class="demo-widget">
                             <iframe class="demo-frame" scrolling="no" src="https://DurhamDJ.github.io/widgets/logo_animation?interval=5" width="540" height="540"></iframe>
                         </div>
                     </div>
@@ -86,11 +86,34 @@
                         <ul>
                             <li>URL: <code>https://DurhamDJ.github.io/widgets/logo_animation</code> <i class="far fa-copy" onclick="copyToClipboard('https://DurhamDJ.github.io/widgets/logo_animation')"></i></li>
                             <li>Dimensions: <code>540x540</code></li>
+                            <li>Parameters: <code>interval</code></li>
                         </ul>
                         <p>This widget rotates at a regular interval. By default this interval is 60 seconds, but here it is set to 5 seconds for demonstration purposes.</p>
                         <p>The interval can be customised by adding a parameter called <code>interval</code> to its URL. This should be given the value of the number of seconds it should wait between spins.</p>
                         <p>For example, to get a 30 second interval, the end of the URL would look like <code>.../logo_animation?interval=30</code>.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content demo">
+            <div class="container">
+                <div class="demo-row full-width-widget">
+                    <h2>DJ Name Tag</h2>
+                    <ul>
+                        <li>URL: <code>https://DurhamDJ.github.io/widgets/nametag</code> <i class="far fa-copy" onclick="copyToClipboard('https://DurhamDJ.github.io/widgets/nametag')"></i></li>
+                        <li>Dimensions: <code>?x540</code></li>
+                        <li>Parameters: <code>name</code>, <code>interval</code></li>
+                    </ul>
+                    <div>
+                        <div id="demo-nametag" class="demo-widget">
+                            <iframe class="demo-frame" scrolling="no" src="https://DurhamDJ.github.io/widgets/nametag?name=DJ Gerald&interval=5" height="540" width="2100"></iframe>
+                        </div>
+                    </div>
+                    <p>This widget features the same logo spinner as above, but adds text intended for use as a name tag.</p>
+                    <p>The width of the widget is decided by the length of the name used, so we advise that you try increasing values until the full width of the widget is visible. As an example, the above widget has a width of around 2100 pixels.</p>
+                    <p>There is a faint shadow around the name tag - we suggest that you err on the side of too much width, because you might cut it off if you aren't careful. For reference, the shadow has a spread of 20 pixels outside the visible name tag area.</p>
+                    <p>Alongside the <code>interval</code> parameter defined above, this widget also offers <code>name</code> to allow you to specify your DJ name. The above demo uses these values: <code>.../nametag?name=DJ Gerald&interval=5</code>. If you find that putting a space in breaks things, try replacing all spaces with <code>%20</code> instead.</p>
                 </div>
             </div>
         </div>
