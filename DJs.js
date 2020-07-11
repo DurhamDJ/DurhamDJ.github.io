@@ -36,9 +36,9 @@ let djs = {
     },
   
     'Brett Garrett': {
-        'bio': 'Brėtt has held down regular sets throughout the city ranging in styles \
-                from house/techno to R’n’B and is now a regular fixture at Rotate and Fabio’s \
-                bar. Brėtt is hard to define musically because of his ability to mix whatever \
+        'bio': 'Brett has held down regular sets throughout the city ranging in styles \
+                from house/techno to R\'n\'B and is now a regular fixture at Rotate and Fabio\'s \
+                bar. Brett is hard to define musically because of his ability to mix whatever \
                 the client throws at him with regular gigs for the international societies. \
                 This year promises to be busy, by keeping the people of durham grooving with \
                 multiple gigs throughout both the city and surrounding areas.',
@@ -70,7 +70,7 @@ let djs = {
     
     'Emily Kelly': {
         'bio': 'Emily DJs a bit of everything, and has played at Durham events + college balls in the past. \
-                She’s also involved in the running of Slink and Continental nights in Durham and Newcastle',
+                She\'s also involved in the running of Slink and Continental nights in Durham and Newcastle',
         'img': 'assets/djimg/Emily.jpg',
         'genres': [
             'disco',
@@ -174,7 +174,7 @@ let djs = {
     'Guillaume Hiller': {
         'bio': 'Influenced by the 1990s percussion-driven techno of his hometown Frankfurt, \
                 the German DJ has made himself an advocate of German techno abroad. After playing in \
-                Nancy’s (FR) student scene, he is now turning up in Durham to make himself a name for \
+                Nancy\'s (FR) student scene, he is now turning up in Durham to make himself a name for \
                 his groovy sets catching trippy melodies and heavy kick-drums.',
         'img': 'assets/djimg/Guillaume.jpg',
         'genres': [

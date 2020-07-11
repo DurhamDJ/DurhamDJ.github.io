@@ -29,6 +29,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
     #genre-filter {
         padding: 5px;
         border: none;
@@ -36,7 +37,6 @@
         background-color: #2d2d2d;
         color: #ffffff;
         width: 150px;
-        height: 30px;
         border-radius: 3px;
     }
 }
@@ -66,11 +66,12 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+
         li {
             display: block;
             float: left;
             background-color: #111111;
-            padding: 0px 8px;
+            padding: 0px 8px 3px 8px;
             border-radius: 5px;
             font-style: italic;
             color: #aaaaaa;
@@ -78,9 +79,11 @@
             margin-bottom: 10px;
             cursor: pointer;
         }
+        
         li:hover {
             color: #ffffff;
         }
+
         .genre-selected {
             background-color: #333333;
             color: #ffffff;
@@ -116,11 +119,14 @@
         background-position: center center;
         padding-bottom: 75%;
     }
+
     .dj-music-container {
         overflow: hidden;
+
         .dj-music {
             margin-top: -100%;
             transition: margin-top ease 0.5s;
+
             iframe {
                 margin-bottom: 8px;
                 width: 100%;
@@ -140,9 +146,9 @@
             color: #ffffff;
             margin-right: 10px;
             transition: color 0.2s;
-        }
-        a:hover {
-            color: #aaaaaa;
+            &:hover {
+                color: #aaaaaa;
+            }
         }
     }
 }
