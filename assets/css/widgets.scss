@@ -12,6 +12,13 @@
 
         }
 
+        &:not(.full-width-widget) {
+            .demo-info {
+                padding-left: 20px;
+                flex: 1;
+            }
+        }
+
         .demo-widget {
 
             &#demo-logo {
@@ -32,9 +39,6 @@
         }
         
         .demo-info {
-            padding-left: 20px;
-            flex: 1;
-
             ul {
                 font-weight: bold;
                 list-style: none;
