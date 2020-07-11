@@ -40,10 +40,10 @@ for (let i of djNames) {
     let card = $('#dj-list .dj-card:last-child');
     dj.card = card;
     card.find('.dj-content h3').html(i);
-    card.find('.dj-img svg').attr('style', 'background-image: url("' + dj.img + '")');
+    card.find('.dj-img svg').attr('style', `background-image: url("${dj.img}")`);
     card.find('.dj-bio p').html(dj.bio);
     for (let j of dj.genres) {
-        card.find('.genre-list').append('<li onclick="filterGenres(this.innerText)">' + j + '</li>')
+        card.find('.genre-list').append(`<li onclick="filterGenres(this.innerText)">${j}</li>`);
         if (!genres.includes(j)) {
             genres.push(j);
         }
@@ -61,7 +61,7 @@ for (let i of djNames) {
             musicDiv.append(generateFrame(j));
         }
     }
-    musicDiv.css('margin-top', '-' + musicDiv.outerHeight() + 'px');
+    musicDiv.css('margin-top', `-${musicDiv.outerHeight()}px`);
 
     // add social links
     let socialsDiv = card.find('.social-container');
@@ -81,7 +81,7 @@ for (let i of djNames) {
         for (j of socialKeys) {
             if (supportedSocials.includes(j)) {
                 let map = socialMappings[j];
-                socialsDiv.append('<a href="' + map[1] + dj.socials[j] + '"><i class="' + map[0] + '"></i></a>')
+                socialsDiv.append(`<a href="${map[1]}${dj.socials[j]}" target="_blank"><i class="${map[0]}"></i></a>`)
             }
         }
     }
@@ -102,7 +102,7 @@ function genreSort(a, b) {
 genres.sort(genreSort);
 // add genres to the filter box
 for (j of genres) {
-    $('#genre-filter').append('<option value="' + j + '">' + j + '</select>');
+    $('#genre-filter').append(`<option value="${j}">${j}</select>`);
 }
 
 // when the page is fully loaded
@@ -142,7 +142,7 @@ function toggleMusic(elem) {
         musicDiv.css('margin-top', '0px');
         // hide other music panels that might be open
         $('.dj-music').not(musicDiv).each((index, el) => {
-            $(el).css('margin-top', '-' + $(el).outerHeight() + 'px');
+            $(el).css('margin-top', `-${$(el).outerHeight()}px`);
         });
         // and spin back any togglers that are rotated
         $('.music-expand').not(elem).each((index, el) => {
@@ -151,7 +151,7 @@ function toggleMusic(elem) {
     }
     else {
         // if the music panel is open, hide it and spin the toggler back around
-        musicDiv.css('margin-top', '-' + musicDiv.outerHeight() + 'px');
+        musicDiv.css('margin-top', `-${musicDiv.outerHeight()}px`);
         $(elem).css('transform', 'translateY(-50%) translateX(-50%) rotate(0deg)');
     }
 }
