@@ -1,28 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <style>
-        body {
-            margin: 0px;
-            padding: 0px;
-        }
-    </style>
+    <title>Redirecting...</title>
 </head>
 <body>
-    <video id="main" width="540" height="540">
-        <source src="logo_animation.webm" type="video/webm">
-    </video>
     <script>
-        const params = new URLSearchParams(window.location.search);
-
-        const interval = params.has('interval') ? params.get('interval') : 60;
-
-        var vid = document.getElementById("main");
-
-        vid.play();
-
-        setInterval(vid.play.bind(vid), interval*1000);
+        const url = window.location.href;
+        window.location.replace(`${url.substring(0, url.lastIndexOf("/")+1)}logo.html${window.location.search}`)
     </script>
 </body>
 </html>
