@@ -33,7 +33,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0px;
+  padding: 10px 20px;
 }
 
 #navbar .container #navbar-brand {
@@ -84,7 +84,7 @@ h1, h2 {
 
 #header-content h1 {
   font-size: 80px;
-  text-align: left;
+  text-align: center;
 }
 
 .page-content {

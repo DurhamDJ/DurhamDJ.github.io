@@ -60,3 +60,16 @@
         }
     }
 }
+
+@media (max-width: 991.9px) {
+    .demo {
+        .demo-row:not(.full-width-widget) {
+            flex-direction: column;
+
+
+            .demo-info {
+                padding-left: 0px;
+            }
+        }
+    }
+}

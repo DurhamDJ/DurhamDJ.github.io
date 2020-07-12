@@ -68,7 +68,7 @@
         <div class="page-content">
             <div class="container">
                 <p>On this page is a set of widgets you can use on DJ livestreams. To use a widget, just create a new browser source in your broadcasting software of choice with the given URL, width and height for that widget.</p>
-                <p>They are all large by default to make sure they look good at any reasonable size - to scale them down, use the transform options in your broadcasting software. They look best at 60fps, but should also look fine if at other framerates.</p>
+                <p>They are all large by default to make sure they look good at any reasonable size - to scale them down, use the transform options in your broadcasting software. They look best at 60fps, but should also look fine if you're streaming at other framerates.</p>
                 <!-- not sure on this yet <p>To be clear: use of a DDJS widget does not strictly constitute an endorsement of your livestream. We trust that you will be responsible when using these resources.</p>-->
             </div>
         </div>
@@ -99,13 +99,13 @@
         <div class="page-content demo">
             <div class="container">
                 <div class="demo-row full-width-widget">
-                    <h2>DJ Name Tag</h2>
                     <div>
                         <div id="demo-nametag" class="demo-widget">
                             <iframe class="demo-frame" scrolling="no" src="https://DurhamDJ.github.io/widgets/nametag?name=DJ Gerald&interval=5" height="540" width="2100"></iframe>
                         </div>
                     </div>
                     <div class="demo-info">
+                        <h2>DJ Name Tag</h2>
                         <ul>
                             <li>URL: <code>https://DurhamDJ.github.io/widgets/nametag</code> <i class="far fa-copy" onclick="copyToClipboard('https://DurhamDJ.github.io/widgets/nametag')"></i></li>
                             <li>Dimensions: <code>?x540</code></li>
@@ -114,7 +114,7 @@
                         <p>This widget features the same logo spinner as above, but adds text intended for use as a name tag.</p>
                         <p>The width of the widget is decided by the length of the name used, so we advise that you try increasing values until the full width of the widget is visible. As an example, the above widget has a width of around 2100 pixels.</p>
                         <p>There is a faint shadow around the name tag - we suggest that you err on the side of too much width, because you might cut it off if you aren't careful. For reference, the shadow has a spread of 20 pixels outside the visible name tag area.</p>
-                        <p>Alongside the <code>interval</code> parameter defined above, this widget also offers <code>name</code> to allow you to specify your DJ name. The above demo uses these values: <code>.../nametag?name=DJ Gerald&interval=5</code>. If you find that putting a space in breaks things, try replacing all spaces with <code>%20</code> instead.</p>
+                        <p>Alongside the <code>interval</code> parameter defined above, this widget also offers <code>name</code> to allow you to specify your DJ name. The above demo uses these values: <code>.../nametag?name=DJ Gerald&interval=5</code>. If you find that putting a space in breaks things, try replacing spaces with <code>%20</code> instead.</p>
                     </div>
                 </div>
             </div>
@@ -150,6 +150,7 @@
         <script src="https://kit.fontawesome.com/63a0232dab.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58923240-3"></script>
         <script src="/assets/main.js"></script>
-        <script src="/widgets/copy.js"></script>
+        <script src="copy.js"></script>
+        <script src="scale-widgets.js"></script>
     </body>
 </html>

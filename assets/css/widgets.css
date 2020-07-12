@@ -33,7 +33,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0px;
+  padding: 10px 20px;
 }
 
 #navbar .container #navbar-brand {
@@ -84,7 +84,7 @@ h1, h2 {
 
 #header-content h1 {
   font-size: 80px;
-  text-align: left;
+  text-align: center;
 }
 
 .page-content {
@@ -231,5 +231,17 @@ footer .container #footer-socials a:hover {
 
 .demo .demo-row .demo-info i.fa-copy:active {
   color: #dddddd;
+}
+
+@media (max-width: 991.9px) {
+  .demo .demo-row:not(.full-width-widget) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .demo .demo-row:not(.full-width-widget) .demo-info {
+    padding-left: 0px;
+  }
 }
 /*# sourceMappingURL=widgets.css.map */
