@@ -145,14 +145,16 @@ footer .container #footer-socials a:hover {
 }
 
 @media (max-width: 767.9px) {
-  .navbar {
-    height: 60px;
-  }
-  .navbar .navbar-brand {
-    height: 40px;
+  #navbar #navbar-brand {
+    -webkit-transition: none;
+    transition: none;
+    height: 80px !important;
   }
   body {
     font-size: 14px;
+  }
+  #header-content {
+    height: 300px !important;
   }
   #header-content h1 {
     font-size: 60px;
@@ -163,27 +165,10 @@ footer .container #footer-socials a:hover {
   h3 {
     font-size: 22px;
   }
-  #header-content {
-    height: 300px;
-  }
 }
 
 #header-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 400px;
-}
-
-#header-content h1 {
-  font-size: 80px;
-  text-align: center;
 }
 
 #society-intro {

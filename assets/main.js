@@ -1,9 +1,11 @@
 function checkScroll() {
-    if ($(window).scrollTop() !== 0) {
-        $('#navbar-brand').css('height', '80px');
-    }
-    else {
-        $('#navbar-brand').css('height', '120px');
+    if (!window.matchMedia('(max-width: 767.9px)').matches) {
+        if ($(window).scrollTop() !== 0) {
+            $('#navbar-brand').css('height', '80px');
+        }
+        else {
+            $('#navbar-brand').css('height', '120px');
+        }
     }
 }
 $(window).scroll(checkScroll);
