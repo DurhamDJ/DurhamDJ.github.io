@@ -197,7 +197,6 @@ footer .container #footer-socials a:hover {
 
 .demo .demo-row .demo-widget#demo-logo {
   width: 270px;
-  height: 270px;
 }
 
 .demo .demo-row .demo-widget#demo-nametag {
@@ -239,6 +238,17 @@ footer .container #footer-socials a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .demo .demo-row:not(.full-width-widget) > div.widget-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .demo .demo-row:not(.full-width-widget) .demo-info {
     padding-left: 0px;

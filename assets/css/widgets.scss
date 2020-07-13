@@ -20,10 +20,8 @@
         }
 
         .demo-widget {
-
             &#demo-logo {
                 width: 270px;
-                height: 270px;
             }
 
             &#demo-nametag {
@@ -65,7 +63,12 @@
     .demo {
         .demo-row:not(.full-width-widget) {
             flex-direction: column;
+            align-items: stretch;
 
+            > div.widget-box {
+                display: flex;
+                justify-content: center;
+            }
 
             .demo-info {
                 padding-left: 0px;
