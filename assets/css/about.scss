@@ -3,3 +3,40 @@
 #society-about {
     font-size: 17px;
 }
+
+#exec-profiles {
+    .exec-row {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+
+        .exec-img {
+            width: 300px;
+            padding-bottom: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .exec-info {
+            margin-left: 20px;
+            flex: 1;
+
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+                font-style: italic;
+            }
+        }
+
+        &.right-image .exec-info {
+            margin-left: 0;
+            margin-right: 20px;
+
+            :not(p) {
+                text-align: right;
+            }
+        }
+    }
+}
