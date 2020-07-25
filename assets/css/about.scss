@@ -17,6 +17,7 @@
             padding-bottom: 100%;
             background-size: cover;
             background-position: center;
+            border-radius: 10px;
         }
         
         .exec-info {
@@ -30,13 +31,17 @@
             }
         }
 
-        &.right-image .exec-info {
-            margin-left: 0;
-            margin-right: 20px;
+        &.right-image {
+            flex-direction: row-reverse;
 
-            :not(p) {
-                text-align: right;
-            }
+            .exec-info {
+               margin-left: 0;
+               margin-right: 20px;
+   
+               :not(p) {
+                   text-align: right;
+               }
+           }
         }
     }
 }

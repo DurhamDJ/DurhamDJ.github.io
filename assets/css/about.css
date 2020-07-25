@@ -186,6 +186,7 @@ footer .container #footer-socials a:hover {
   padding-bottom: 100%;
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
 }
 
 #exec-profiles .exec-row .exec-info {
@@ -199,6 +200,13 @@ footer .container #footer-socials a:hover {
   list-style-type: none;
   padding-left: 0;
   font-style: italic;
+}
+
+#exec-profiles .exec-row.right-image {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 #exec-profiles .exec-row.right-image .exec-info {
