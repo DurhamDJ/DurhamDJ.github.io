@@ -170,4 +170,51 @@ footer .container #footer-socials a:hover {
 #society-about {
   font-size: 17px;
 }
+
+#exec-profiles .exec-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#exec-profiles .exec-row:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+#exec-profiles .exec-row .exec-img {
+  width: 300px;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+#exec-profiles .exec-row .exec-info {
+  margin-left: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#exec-profiles .exec-row .exec-info ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-style: italic;
+}
+
+#exec-profiles .exec-row.right-image {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#exec-profiles .exec-row.right-image .exec-info {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+#exec-profiles .exec-row.right-image .exec-info :not(p) {
+  text-align: right;
+}
 /*# sourceMappingURL=about.css.map */
