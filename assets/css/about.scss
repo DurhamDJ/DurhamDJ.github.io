@@ -1,6 +1,6 @@
 @import "./main";
 
-#society-about {
+#society-about, #society-offerings {
     font-size: 17px;
 }
 
@@ -42,6 +42,40 @@
                    text-align: right;
                }
            }
+        }
+    }
+}
+
+
+@media (max-width: 991.9px) {
+    #exec-profiles {
+        .exec-row {
+            flex-direction: column;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-bottom: 80px;
+            }
+            
+            .exec-info {
+                margin: 20px 0 0 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 766.9px) {
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 575.9px) {
+    #exec-profiles .exec-row {
+        align-items: stretch;
+
+        .exec-img {
+            width: 100%;
         }
     }
 }

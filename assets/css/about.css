@@ -167,7 +167,7 @@ footer .container #footer-socials a:hover {
   }
 }
 
-#society-about {
+#society-about, #society-offerings {
   font-size: 17px;
 }
 
@@ -216,5 +216,40 @@ footer .container #footer-socials a:hover {
 
 #exec-profiles .exec-row.right-image .exec-info :not(p) {
   text-align: right;
+}
+
+@media (max-width: 991.9px) {
+  #exec-profiles .exec-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #exec-profiles .exec-row:not(:last-child) {
+    margin-bottom: 80px;
+  }
+  #exec-profiles .exec-row .exec-info {
+    margin: 20px 0 0 0;
+  }
+}
+
+@media (max-width: 766.9px) {
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 575.9px) {
+  #exec-profiles .exec-row {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  #exec-profiles .exec-row .exec-img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=about.css.map */
