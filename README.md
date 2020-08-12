@@ -1,5 +1,4 @@
-# DurhamDJ.github.io
-Durham DJ Society Website
+# Durham DJ Society Website
 
 * **[Updating the website](#Updating-the-website)**
 * **[Updating DJ Info](#Updating-DJ-Info)**
@@ -153,7 +152,7 @@ The entry in `'music'` should look like `['mixcloud': '/name/mix-name/']`.
 #### Soundcloud
 Getting Soundcloud information takes a bit more effort. Visit the track, hit 'Share' and then go to the 'Embed' tab.
 
-Copy-paste the code it gives you into the tool at [https://DurhamDJ.github.io/assets/getID/](https://DurhamDJ.github.io/assets/getID). The number you get back (it should look like `253565889`) is the ID.
+Copy-paste the code it gives you into the tool at [https://ddjs.uk/assets/getID/](https://ddjs.uk/assets/getID). The number you get back (it should look like `253565889`) is the ID.
 
 (If the tool doesn't work, you need to copy the code into a text editor, look for something that looks like `api.soundcloud.com/tracks/253565889&...` and copy the number after `tracks/`.)
 
