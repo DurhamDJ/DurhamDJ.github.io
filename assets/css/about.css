@@ -144,6 +144,10 @@ footer .container #footer-socials a:hover {
   color: #dddddd;
 }
 
+footer .container #footer-socials a:not(:last-child) {
+  margin-right: 5px;
+}
+
 @media (max-width: 767.9px) {
   #navbar #navbar-brand {
     -webkit-transition: none;

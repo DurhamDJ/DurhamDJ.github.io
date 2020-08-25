@@ -119,6 +119,10 @@ footer {
                 &:hover {
                     color: #dddddd;
                 }
+
+                &:not(:last-child) {
+                    margin-right: 5px;
+                }
             }
         }
     }
