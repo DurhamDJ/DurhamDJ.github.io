@@ -230,5 +230,27 @@ let djs = {
             'facebook': 'jakeverseuk',
             'youtube': 'channel/UCMBLTWhZ02kpzS4qVLdat-w'
         }
+    },
+
+    'Merry \'QVV\' Crossland': {
+        'bio': 'Cottagecore sadgal by day, duttybass gremlin by night. QVV is a 2nd year from hell \
+                studying something irrelevant. Since hatching from an egg, raised by an army of frogs, \
+                Aphex Twin\'s discography and with some help from Tom Atherton, QVV has since embarked \
+                on a promising start to cracking Durham\'s DJ scene, having featured regularly in Lockdown \
+                Livestreams, as a resident at Durhain: Berghain in a Bedroom and also upcoming college BOPs. \
+                If you want memes, techno dreams, pop diva queens and sometimes songs about Kanye\'s sex \
+                life, this gal is definitely the one to watch out for. Also check her out @ SSDP, Purple \
+                Radio and various branches of Greggs #stonkbonk',
+        'img': 'assets/djimg/Merry.jpg',
+        'genres': [
+            'techno',
+            'drum and bass',
+            'synthwave',
+            'dance'
+        ],
+        'socials': {
+            'facebook': 'merry.qvv',
+            'instagram': 'q.veevee'
+        }
     }
 };

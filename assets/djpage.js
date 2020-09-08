@@ -24,6 +24,10 @@ const socialMappings = {
     'youtube': [
         'fab fa-youtube',
         'https://www.youtube.com/'
+    ],
+    'instagram': [
+        'fab fa-instagram',
+        'https://www.instagram.com/'
     ]/*,
     'hearthis.at': [
         'No icon',
