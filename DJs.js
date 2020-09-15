@@ -2,7 +2,7 @@ let djs = {
     'Dasha Anderson': {
         'bio': 'Breakthrough Events resident who loves anything with good drums – drum and bass, techno, house, breakbeat, electro. \
                 Aerial has done guest appearances at 1984, Zellig Sound, Durfest and Fractal, playing a wide range of electronic music genres. ',
-        'img': 'assets/djimg/Dasha Anderson.png',
+        'img': 'assets/djimg/Dasha.jpg',
         'genres': [
             'drum and bass',
             'jungle',
@@ -42,7 +42,7 @@ let djs = {
                 the client throws at him with regular gigs for the international societies. \
                 This year promises to be busy, by keeping the people of durham grooving with \
                 multiple gigs throughout both the city and surrounding areas.',
-        'img': 'assets/djimg/Brett.png',
+        'img': 'assets/djimg/Brett.jpg',
         'genres': [
         ],
         'music': [
@@ -55,7 +55,7 @@ let djs = {
                 Switch-Up and Rotate, whilst also having had experience playing in Norwich, \
                 Leeds and Newcastle. He has released music on Beastwang and Trench \
                 Bass Music Records, with singles and EPs lined up with various other labels.',
-        'img': 'assets/djimg/Isaac.png',
+        'img': 'assets/djimg/Isaac.jpg',
         'genres': [
             'garage',
             'UK bass',
@@ -106,7 +106,7 @@ let djs = {
         'bio': 'Laszlo Karsai aka Laszlo has been making the Durham DJ scene his home \
                 since late 2018. Promising to bring energy and groove to every occasion, \
                 his sets fuse fresh selections of house music effortlessly.',
-        'img': 'assets/djimg/Laszlo.png',
+        'img': 'assets/djimg/Laszlo.jpg',
         'genres': [
             'commercial dance',
             'house',
@@ -138,7 +138,7 @@ let djs = {
                 techno, breakbeat and industrial. Andy has played at various clubs across the \
                 UK with the likes of Dr. Joseph, Sybil, Blasha & Allatt, Leah Floyeurs and Surgeon. \
                 For booking information please email orificedj@gmail.com',
-        'img': 'assets/djimg/Andy.png',
+        'img': 'assets/djimg/Andy.jpg',
         'genres': [
             'techno',
             'electro',
