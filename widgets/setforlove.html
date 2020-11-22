@@ -19,7 +19,7 @@
 
         #nametag {
             overflow: hidden;
-            transform: scale(0.5, 0.5);
+            transform: scale(0.3, 0.3);
             bottom: 0;
             left: 0;
             transform-origin: 0 100%;
@@ -40,7 +40,13 @@
 
         const name = params.has('name') ? params.get('name') : 'Name not set';
 
-        document.getElementById('nametag').src = `nametag.html?name=${name}`;
+        if (name == 'deadW') {
+            document.getElementById('nametag').remove();
+        }
+        else {
+            document.getElementById('nametag').src = `nametag.html?name=${name}&interval=10`;
+        }
+
     </script>
 </body>
 </html>
