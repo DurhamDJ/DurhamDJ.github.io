@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            position: absolute;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #nametag {
+            overflow: hidden;
+            transform: scale(0.5, 0.5);
+            bottom: 0;
+            left: 0;
+            transform-origin: 0 100%;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="nametag" width="3840" height="541"></iframe>
+    <iframe src="https://live.justgiving.com/pages/widgets/v1/donation-progressbar?streamerId=58e2e7de-aac4-4aec-9970-286b62e949a5"></iframe>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const name = params.has('name') ? params.get('name') : 'Name not set';
+
+        document.getElementById('nametag').src = `nametag.html?name=${name}`;
+    </script>
+</body>
+</html>
