@@ -51,7 +51,7 @@ function generateSoundcloudFrame(id) {
 }
 function generateYouTubeFrame(id, startTime) {
     const iframeProps = defaultIframeProps + ' height="400" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture" allowfullscreen title="Embedded YouTube video"';
-    return `<iframe ${iframeProps} source="https://www.youtube-nocookie.com/embed/${id}${startTime ? `?t=${startTime}`: ''}">Loading...</iframe>`;
+    return `<iframe ${iframeProps} source="https://www.youtube-nocookie.com/embed/${id}${startTime ? `?start=${startTime}`: ''}">Loading...</iframe>`;
 }
 function generateHearthIsFrame(id) {
     const iframeProps = defaultIframeProps + ` height="150" allowtransparency allow="autoplay" id="hearthis_at_track_${id}" title="Embedded hearthis.at content"`;

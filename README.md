@@ -147,28 +147,28 @@ If you visit the mix, inside the address bar will be something along the lines o
 
 The information you need to put inside the DJ's information is the `/name/mix-name/` section. Make sure to put it inside quotes (`''`). If there is no slash on the end, make sure to add one in - the widget won't work otherwise.
 
-The entry in `'music'` should look like `['mixcloud': '/name/mix-name/']`.
+The entry in `'music'` should look like `['mixcloud', '/name/mix-name/']`.
 
 #### Soundcloud
 Getting Soundcloud information takes a bit more effort. Visit the track, hit 'Share' and then go to the 'Embed' tab.
 
-Copy-paste the code it gives you into the tool at [https://ddjs.uk/assets/getID/](https://ddjs.uk/assets/getID). The number you get back (it should look like `253565889`) is the ID.
+Copy-paste the code it gives you into the tool at [https://ddjs.uk/assets/getID](https://ddjs.uk/assets/getID). The number you get back (it should look like `253565889`) is the ID.
 
 (If the tool doesn't work, you need to copy the code into a text editor, look for something that looks like `api.soundcloud.com/tracks/253565889&...` and copy the number after `tracks/`.)
 
-The entry in `'music'` should look like `['soundcloud': 'ID-NUMBER']`.
+The entry in `'music'` should look like `['soundcloud', '253565889']`.
 
 #### YouTube
 For a YouTube embed, get the address of the video. It will look like `https://www.youtube.com/watch?v=y6120QOlsfU?possibly-other=information` or  `https://youtu.be/y6120QOlsfU?possibly-other=information`.
 
-Just use the section that's like `y6120QOlsfU`, at the end of the main URL.
+Just use the section that's like `y6120QOlsfU`, at the end of the main URL. You can also optionally provide a start time for the video in seconds; this can be added at the end of the structure (eg `['youtube', 'y6120QOlsfU', '84']`).
 
-The entry in `'music'` should look like `['youtube': 'y6120QOlsfU']`.
+The entry in `'music'` should look like `['youtube', 'y6120QOlsfU']`.
 
 #### hearthis.at
 For a [hearthis.at](https://hearthis.at) embed, visit the mix and click 'Social'. You should see a 'Short Link' field that looks like `https://hearthis.at/MIX-ID/`. That `MIX-ID` is what you want to use.
 
-The entry in `'music'` should look like `['hearthis.at': 'MIX-ID']`.
+The entry in `'music'` should look like `['hearthis.at', 'MIX-ID']`.
 
 ### Social Media Links
 Social media links are included in a similar way to music embeds, except that there should be at most one of each type for each DJ. They are included as icons in the top-right corner of the DJ's bio box. Currently supported are:
