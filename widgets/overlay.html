@@ -22,24 +22,18 @@
             left: 0;
             transform-origin: 0 100%;
         }
-
-        #progress {
-            top: 130px;
-            left: 1473px;
-        }
     </style>
 </head>
 <body>
-    <img src="assets/overlay_sfl.png">
+    <img src="assets/overlay.png">
     <iframe id="nametag" width="3840" height="540"></iframe>
-    <iframe id="progress" width="440" height="100" src="https://live.justgiving.com/pages/widgets/v1/donation-progressbar?streamerId=58e2e7de-aac4-4aec-9970-286b62e949a5"></iframe>
     <script>
         // Pass DJ name through to nametag widget
         const params = new URLSearchParams(window.location.search);
 
         const name = params.has('name') ? params.get('name') : 'Name not set';
 
-        if (name == 'deadW') {
+        if (name == 'none') {
             document.getElementById('nametag').remove();
         }
         else {

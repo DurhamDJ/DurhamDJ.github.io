@@ -1,0 +1,43 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    background: none;
+}
+
+div.site-wrapper {
+    background: none;
+    box-shadow: none;
+}
+
+div.mixcloud-live-chat-container-outer {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+div.mixcloud-live-chat-container {
+    background: none;
+    padding: 10px;
+    width: 100vw;
+}
+
+div.mixcloud-live-chat-chat-window {
+    background: none;
+    height: 100vh;
+}
+
+div.mixcloud-live-chat-chat-window > div:last-child {
+    display: none;
+}
+
+div.mixcloud-live-chat-row {
+    background: rgba(255, 255, 255, 0.15);
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+}
+
+div.styles__ChatRowMenu-sc-1eo8mtu-9 {
+    visibility: hidden;
+}
