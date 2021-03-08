@@ -50,7 +50,7 @@ function generateSoundcloudFrame(id) {
     return `<iframe ${iframeProps} source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${id}${urlProps}">Loading...</iframe>`;
 }
 function generateYouTubeFrame(id, startTime) {
-    const iframeProps = defaultIframeProps + ' height="400" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture" allowfullscreen title="Embedded YouTube video"';
+    const iframeProps = defaultIframeProps + ' height="400" allowfullscreen title="Embedded YouTube video"';
     return `<iframe ${iframeProps} source="https://www.youtube-nocookie.com/embed/${id}${startTime ? `?start=${startTime}`: ''}">Loading...</iframe>`;
 }
 function generateHearthIsFrame(id) {
