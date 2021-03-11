@@ -252,5 +252,24 @@ let djs = {
             'facebook': 'merry.qvv',
             'instagram': 'q.veevee'
         }
+    },
+
+    'Charles Pritchard': {
+        'bio': 'Charles first came onto the Durham scene with a clubby house mix for Rotate, and has more \
+                recently performed a more underground mix at Univerzal, as well as making appearances on \
+                several DDJS livestreams throughout 2020. With his huge passion for house, he can comfortably \
+                supply enough groovy minimal bangers to get anyone swaying on the dance floor.',
+        'img': 'assets/djimg/Charles.jpg',
+        'genres': [
+            'house',
+            'disco'
+        ],
+        'socials': {
+            'youtube': 'channel/UCGg8wPWv_9KUqYDdynRVL2w'
+        },
+        'music': [
+            ['youtube', 'KQYPGw80xYo'],
+            ['youtube', 'idJz1qzwR0o', '360']
+        ]
     }
 };
