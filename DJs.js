@@ -1,24 +1,12 @@
 let djs = {
-    'Dasha Anderson': {
-        'bio': 'Breakthrough Events resident who loves anything with good drums – drum and bass, techno, house, breakbeat, electro. \
-                Aerial has done guest appearances at 1984, Zellig Sound, Durfest and Fractal, playing a wide range of electronic music genres. ',
-        'img': 'assets/djimg/Dasha.jpg',
-        'genres': [
-            'drum and bass',
-            'jungle',
-            'breakbeat',
-            'techno'
-        ],
-        'music': [
-            ['mixcloud', '/djaerial/aerial-viper-1/']
-        ]
-    },
-    
     'Aidan Williamson': {
-        'bio': 'deadW is a very experienced DJ with an event runner & DJ residency at klute! He has two sides to the W - \
-                there is the fun, cheesey, and dancey side which gets everyone on their feet, jumping in the air and singing along, \
-                and there is the edgier side where he spins all sorts festival and underground bangers fluently! Whatever the event, expect fresh new mashups, \
-                bootlegs, and remixers (some of which deadW may have produced himself!) - be prepared to hear classics and bangers like you have never heard them before!',
+        'bio': 'deadW is a very experienced DJ with an event runner & DJ residency at Klute! \
+                He has two sides to the W - there is the fun, cheesey, and dancey side which \
+                gets everyone on their feet, jumping in the air and singing along, and there \
+                is the edgier side where he spins all sorts festival and underground bangers \
+                fluently! Whatever the event, expect fresh new mashups, bootlegs, and remixes \
+                (some of which deadW may have produced himself!) - be prepared to hear classics \
+                and bangers like you have never heard them before!',
         'img': 'assets/djimg/DeadW.png',
         'genres': [
             'pop',
@@ -32,7 +20,9 @@ let djs = {
             ['mixcloud', '/deadW/multigenre-mix-2-prog-big-room-house-bounce-and-hardstyle/'],
             ['mixcloud', '/deadW/the-psy-trance-mix/'],
             ['mixcloud', '/deadW/hard-mix-hardstyle-hardcore-rawstyle-psystyle/']
-        ]
+        ],
+        'socials': {   
+        }
     },
   
     'Brett Garrett': {
@@ -46,60 +36,9 @@ let djs = {
         'genres': [
         ],
         'music': [
-        ]    
-    },
-      
-    'Isaac Green': {
-        'bio': 'Isaac Green (known within music as Zefer) has played across \
-                some of the major nights in Durham, including Monochrome, Dursesh, \
-                Switch-Up and Rotate, whilst also having had experience playing in Norwich, \
-                Leeds and Newcastle. He has released music on Beastwang and Trench \
-                Bass Music Records, with singles and EPs lined up with various other labels.',
-        'img': 'assets/djimg/Isaac.jpg',
-        'genres': [
-            'garage',
-            'UK bass',
-            'funk',
-            'drum and bass'        
         ],
-        'music': [
-            ['soundcloud', '662385164'],
-            ['soundcloud', '668394668']
-        ]
-    },
-    
-    'Emily Kelly': {
-        'bio': 'Emily DJs a bit of everything, and has played at Durham events + college balls in the past. \
-                She\'s also involved in the running of Slink and Continental nights in Durham and Newcastle',
-        'img': 'assets/djimg/Emily.jpg',
-        'genres': [
-            'disco',
-            'house',
-            'techno',
-            'funk',
-            'soul',
-            'pop',
-            'garage'
-        ],
-        'music': [
-            ['soundcloud', '712900417']
-
-        ]
-    },
- 
-    'Harry Whittaker': {
-        'bio': 'Co-founder of Breakthrough Events, with guest DJ appearances at Zellig \
-                Sound and Fractal and a residency at Rotate, Harry Whittaker can play a \
-                range of music suitable for house parties and club nights.',
-        'img': 'assets/djimg/Harry.jpg',
-        'genres': [
-            'drum and bass',
-            'jungle',
-            'house'
-        ],
-        'music': [
-            ['soundcloud', '597381498'],
-        ]
+        'socials': {
+        }
     },
     
     'Laszlo Karsai': {
@@ -117,18 +56,9 @@ let djs = {
         'music': [
             ['mixcloud', '/LO_LA/the-sound-of-swing/'],
             ['mixcloud', '/LO_LA/journey-1-from-house-to-techno/']
-        ]
-    },
-    
-    'Ryan Khan': {
-        'bio': 'Co-organizer and DJ of the infamous drum and bass night Zellig sound.',
-        'img': 'assets/djimg/khanage.jpg',
-        'genres': [
-            'drum and bass'
         ],
-        'music': [
-            ['soundcloud', '563014539']
-        ]
+        'socials': {
+        }
     },
     
     'Andy Smith': {
@@ -145,15 +75,16 @@ let djs = {
             'breaks'
         ],
         'music': [
-
-        ]
+        ],
+        'socials': {
+        }
     },
     
     'Barnaby Collins': {
         'bio': 'Barnaby\'s reputation precedes him in the Durham DJ scene thanks to his clean mixes, \
-        high energy and varied music selection. In 2020, he could often be found streaming sets on a \
-        number of different channels, but as Durham reopens in 2021 he is keen to resume bringing his \
-        signature creativity, passion and experimentalism to nights of all sizes.',
+                high energy and varied music selection. In 2020, he could often be found streaming sets on a \
+                number of different channels, but as Durham reopens in 2021 he is keen to resume bringing his \
+                signature creativity, passion and experimentalism to nights of all sizes.',
         'img': 'assets/djimg/Barnaby.jpg',
         'genres': [
             'drum and bass',
@@ -168,46 +99,6 @@ let djs = {
             'facebook': 'barnaby.a.collins',
             'mixcloud': 'barnabycollins',
             'soundcloud': 'barnabycollins'
-        }
-    },
-
-    'Guillaume Hiller': {
-        'bio': 'Influenced by the 1990s percussion-driven techno of his hometown Frankfurt, \
-                the German DJ has made himself an advocate of German techno abroad. After playing in \
-                Nancy\'s (FR) student scene, he is now turning up in Durham to make himself a name for \
-                his groovy sets catching trippy melodies and heavy kick-drums.',
-        'img': 'assets/djimg/Guillaume.jpg',
-        'genres': [
-            'techno'
-        ],
-        'music': [
-
-        ],
-        'socials': {
-            'facebook': 'guillaume.hiller.7'
-        }
-    },
-
-    'Ian Lin': {
-        'bio': 'Ian Lin is a DJ & promoter from Taiwanese indie label \
-                "Minelectro Inc." As the founder of National Cheng Kung University \
-                Electronic Music Club, he won the love of the crowd in all kinds of \
-                parties, bars and music scenes with groovy tunes and a surprising \
-                music selection. Now, he\'s ready to bring these great vibes here to the UK!',
-        'img': 'assets/djimg/IanLin.jpg',
-        'genres': [
-            'house',
-            'tech house',
-            'disco',
-            'funk',
-            'pop'
-        ],
-        'music': [
-            ['mixcloud', '/ian-lin7/beach-vibes/'],
-            ['mixcloud','/民生電氣Minelectro_inc/minelectro-on-air-guest-mix-25ian/']
-        ],
-        'socials': {
-            'facebook': 'DJIanLin'
         }
     },
 
@@ -264,12 +155,12 @@ let djs = {
             'house',
             'disco'
         ],
-        'socials': {
-            'youtube': 'channel/UCGg8wPWv_9KUqYDdynRVL2w'
-        },
         'music': [
             ['youtube', 'KQYPGw80xYo'],
             ['youtube', 'idJz1qzwR0o', '360']
-        ]
+        ],
+        'socials': {
+            'youtube': 'channel/UCGg8wPWv_9KUqYDdynRVL2w'
+        }
     }
 };
