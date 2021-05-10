@@ -1,13 +1,15 @@
 let djs = {
-    'Aidan Williamson': {
-        'bio': 'deadW is a very experienced DJ with an event runner & DJ residency at Klute! \
-                He has two sides to the W - there is the fun, cheesey, and dancey side which \
-                gets everyone on their feet, jumping in the air and singing along, and there \
-                is the edgier side where he spins all sorts festival and underground bangers \
-                fluently! Whatever the event, expect fresh new mashups, bootlegs, and remixes \
-                (some of which deadW may have produced himself!) - be prepared to hear classics \
-                and bangers like you have never heard them before!',
-        'img': 'assets/djimg/DeadW.png',
+    'Aidan McKenzie': {
+        'bio': 'Aidan McKenzie [formerly deadW] is a musician, producer, and a very experienced \
+                DJ with a DJ residency at Klute! With appearances at summer balls, bops, \
+                freshers events, and house parties across Durham he has a range of styles which \
+                he loves playing with - there\'s a fun, cheesey, and dancey side to get everyone \
+                on their feet, jumping in the air and singing along, and he\'s very comfortable \
+                playing with the vibe and spinning in some of his edgier side fluently. Whatever \
+                the event, expect fresh new, bootlegs, mashups, and remixes (many of which he \
+                would have produced himself) - be prepared to hear classics, bangers, and the \
+                Durham cheese like you have never heard them before!',
+        'img': 'assets/djimg/aidan.jpg',
         'genres': [
             'pop',
             'dance',
@@ -16,12 +18,12 @@ let djs = {
             'hardcore'
         ],
         'music': [
-            ['mixcloud', '/deadW/the-duz-mix-cheese-charts-remixed/'],
-            ['mixcloud', '/deadW/multigenre-mix-2-prog-big-room-house-bounce-and-hardstyle/'],
-            ['mixcloud', '/deadW/the-psy-trance-mix/'],
-            ['mixcloud', '/deadW/hard-mix-hardstyle-hardcore-rawstyle-psystyle/']
+            ['youtube', 'LBnAGz0TIIw', '480']
         ],
-        'socials': {   
+        'socials': {
+            'facebook': 'aidsmckenzie​',
+            'soundcloud': 'aidsmckenzie​',
+            'mixcloud': 'aidsmckenzie​'
         }
     },
   
