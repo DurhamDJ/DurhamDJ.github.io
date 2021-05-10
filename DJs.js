@@ -18,7 +18,7 @@ let djs = {
             'hardcore'
         ],
         'music': [
-            ['youtube', 'LBnAGz0TIIw', '480']
+            ['youtube', 'LBnAGz0TIIw']
         ],
         'socials': {
             'facebook': 'aidsmckenzie​',
