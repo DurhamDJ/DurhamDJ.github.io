@@ -170,6 +170,11 @@ For a [hearthis.at](https://hearthis.at) embed, visit the mix and click 'Social'
 
 The entry in `'music'` should look like `['hearthis.at', 'MIX-ID']`.
 
+#### Spotify
+For a Spotify track, just right click the track in the Spotify website or application, hit 'Share' and then 'Copy Song Link'. You'll probably get something along the lines of  `https://open.spotify.com/track/623rRTKwGmgjH6sjE9uWLh?si=abcdefg123456789`. Just grab the text between `track/` and `?` and enter that into the `'music'` field under `'spotify-track'`.
+
+The entry in `'music'` should look like `['spotify-track', '623rRTKwGmgjH6sjE9uWLh']`.
+
 ### Social Media Links
 Social media links are included in a similar way to music embeds, except that there should be at most one of each type for each DJ. They are included as icons in the top-right corner of the DJ's bio box. Currently supported are:
 

@@ -105,7 +105,7 @@ let djs = {
     },
 
     'Jake Roberts': {
-        'bio': 'Jake has been DJ\'ing as jakeverse for around 5 years, first privately, \
+        'bio': 'Jake has been DJ\'ing as jakeverse for around 6 years, first privately, \
                 then as a new, regular member of the DDJS at the weekly open decks. His music \
                 selection and style of mixing is unique, comfortably mixing anything from groovy \
                 tech house to hard hitting techno. Jake also produces the odd tech house tune, \
@@ -116,12 +116,12 @@ let djs = {
             'techno'
         ],
         'music': [
-            ['soundcloud', '829536616'],
+            ['spotify-track', '2eKGGJludrq2pww8soAJui'],
             ['mixcloud', '/JakeVerse/tech-housetechno-mix-128-145bpm-260620/']
         ],
         'socials': {
             'facebook': 'jakeverseuk',
-            'youtube': 'channel/UCMBLTWhZ02kpzS4qVLdat-w'
+            'spotify': '3KqWcHOLAgzotpuBKKz2un'
         }
     },
 

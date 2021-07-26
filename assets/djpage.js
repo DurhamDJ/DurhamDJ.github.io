@@ -28,6 +28,10 @@ const socialMappings = {
     'instagram': [
         'fab fa-instagram',
         'https://www.instagram.com/'
+    ],
+    'spotify': [
+        'fab fa-spotify',
+        'https://open.spotify.com/artist/'
     ]/*,
     'hearthis.at': [
         'No icon',

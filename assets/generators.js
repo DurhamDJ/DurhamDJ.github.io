@@ -30,7 +30,8 @@ frameFunctions = {
     'mixcloud': generateMixcloudFrame,
     'soundcloud': generateSoundcloudFrame,
     'youtube': generateYouTubeFrame,
-    'hearthis.at': generateHearthIsFrame
+    'hearthis.at': generateHearthIsFrame,
+    'spotify-track': generateSpotifyTrackFrame
 }
 
 function generateFrame([platform, ...args]) {
@@ -57,4 +58,8 @@ function generateHearthIsFrame(id) {
     const iframeProps = defaultIframeProps + ` height="150" allowtransparency allow="autoplay" id="hearthis_at_track_${id}" title="Embedded hearthis.at content"`;
     const urlProps = '?hcolor=ffffff&color=aaaaaa&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0';
     return `<iframe ${iframeProps} source="https://app.hearthis.at/embed/${id}/transparent_black/${urlProps}">Loading...</iframe>`;
+}
+function generateSpotifyTrackFrame(id) {
+    const iframeProps = defaultIframeProps + ` height="80" allowtransparency="true" allow="encrypted-media"`;
+    return `<iframe ${iframeProps} source="https://open.spotify.com/embed/track/${id}?theme=0">Loading...</iframe>`;
 }
