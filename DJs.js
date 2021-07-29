@@ -94,7 +94,7 @@ let djs = {
         ],
         'music': [
             ['youtube', 't_-JCmJ9pEc', '33'],
-            ['youtube', 'PFDwFkLO7A8', '73'],
+            ['youtube', '/barnabycollins/lockdown-livestreams-2-entering-the-cool-zone-with-barnaby-and-dominic/'],
             ['mixcloud', '/barnabycollins/jazzy-drum-bass-mix-1/']
         ],
         'socials': {
