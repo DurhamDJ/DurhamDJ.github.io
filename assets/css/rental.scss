@@ -1,0 +1,16 @@
+@import "./main";
+
+#rentals-info {
+    #decks-img {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+#hire-calendar {
+    iframe {
+        height: 80vh;
+        border: 0px;
+    }
+}
