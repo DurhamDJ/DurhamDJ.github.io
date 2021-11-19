@@ -3,7 +3,6 @@
 <head>
     <style>
         * {
-            position: absolute;
             border: none;
             padding: 0;
             margin: 0;
@@ -13,26 +12,37 @@
             width: 100vw;
             height: 100vh;
             overflow: hidden;
+            background: #555555;
+        }
+
+        body > * {
+            position: absolute;
         }
 
         #nametag {
             overflow: hidden;
-            transform: scale(0.3, 0.3);
-            bottom: 0;
-            left: 0;
+            transform: scale(0.25, 0.25);
+            bottom: 30px;
+            left: 30px;
             transform-origin: 0 100%;
         }
 
         #progress {
-            top: 130px;
+            top: 170px;
             left: 1473px;
+        }
+
+        #topdonations {
+            right: 0px;
+            top: 250px;
         }
     </style>
 </head>
 <body>
-    <img src="assets/overlay_sfl.png">
+    <img src="assets/overlay_sfl_2021.png">
     <iframe id="nametag" width="3840" height="540"></iframe>
     <iframe id="progress" width="440" height="100" src="https://live.justgiving.com/pages/widgets/v1/donation-progressbar?streamerId=58e2e7de-aac4-4aec-9970-286b62e949a5"></iframe>
+    <iframe id="topdonations" width="454" height="205" src="https://live.justgiving.com/streamer/w/top-donor?streamerId=58e2e7de-aac4-4aec-9970-286b62e949a5"></iframe>
     <script>
         // Pass DJ name through to nametag widget
         const params = new URLSearchParams(window.location.search);

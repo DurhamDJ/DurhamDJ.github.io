@@ -9,42 +9,45 @@ html {
 }
 
 body {
-    background: none;
+    background: #000000;
 }
 
-div.site-wrapper {
+.site-wrapper {
     background: none;
     box-shadow: none;
-    max-width: 100vw;
 }
 
-div.mixcloud-live-chat-container-outer {
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-}
-
-div.mixcloud-live-chat-container {
+.mixcloud-live-chat-chat-window {
     background: none;
-    padding: 10px;
-    width: 100vw;
+    border: none;
 }
 
-div.mixcloud-live-chat-chat-window {
+.mixcloud-live-chat-container-outer {
+  overflow: hidden;
+}
+
+.mixcloud-live-chat-container {
     background: none;
-    height: 100vh;
 }
 
-div.mixcloud-live-chat-chat-window > div:last-child {
+.mixcloud-live-chat-row {
+    background: #ffffff44;
+    border-radius: 10px;
+    margin: 3px 6px;
+}
+
+.mixcloud-live-chat-row:first-child {
+    margin-bottom: 6px;
+}
+
+.mixcloud-live-chat-row-link {
+    font-size: 14px;
+}
+
+.styles__MessageBodyTextRegular-sc-1eo8mtu-51 {
+    font-size: 18px !important;
+}
+
+.styles__ChatInputContainer-sc-1eo8mtu-2 {
     display: none;
-}
-
-div.mixcloud-live-chat-row {
-    background: rgba(255, 255, 255, 0.15);
-    margin: 10px 0 0 0;
-    border-radius: 5px;
-}
-
-div.styles__ChatRowMenu-sc-1eo8mtu-9 {
-    visibility: hidden;
-}
+}  
