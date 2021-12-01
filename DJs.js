@@ -26,22 +26,6 @@ let djs = {
             'mixcloud': 'aidsmckenzie​'
         }
     },
-  
-    'Brett Garrett': {
-        'bio': 'Brett has held down regular sets throughout the city ranging in styles \
-                from house/techno to R\'n\'B and is now a regular fixture at Rotate and Fabio\'s \
-                bar. Brett is hard to define musically because of his ability to mix whatever \
-                the client throws at him with regular gigs for the international societies. \
-                This year promises to be busy, by keeping the people of durham grooving with \
-                multiple gigs throughout both the city and surrounding areas.',
-        'img': 'assets/djimg/Brett.jpg',
-        'genres': [
-        ],
-        'music': [
-        ],
-        'socials': {
-        }
-    },
     
     'Laszlo Karsai': {
         'bio': 'Laszlo Karsai aka Laszlo has been making the Durham DJ scene his home \
@@ -58,25 +42,6 @@ let djs = {
         'music': [
             ['mixcloud', '/LO_LA/the-sound-of-swing/'],
             ['mixcloud', '/LO_LA/journey-1-from-house-to-techno/']
-        ],
-        'socials': {
-        }
-    },
-    
-    'Andy Smith': {
-        'bio': 'Andy Smith (aka Orifice) is a resident DJ and organiser of 1984, \
-                Durham\'s only dedicated techno party. Andy has earned a reputation \
-                as a predominantly vinyl only DJ whose sets consist of a blend of electro, \
-                techno, breakbeat and industrial. Andy has played at various clubs across the \
-                UK with the likes of Dr. Joseph, Sybil, Blasha & Allatt, Leah Floyeurs and Surgeon. \
-                For booking information please email orificedj@gmail.com',
-        'img': 'assets/djimg/Andy.jpg',
-        'genres': [
-            'techno',
-            'electro',
-            'breaks'
-        ],
-        'music': [
         ],
         'socials': {
         }
@@ -153,6 +118,33 @@ let djs = {
         'music': [
             ['youtube', 'KQYPGw80xYo'],
             ['youtube', 'idJz1qzwR0o', '360']
+        ],
+        'socials': {
+            'youtube': 'channel/UCGg8wPWv_9KUqYDdynRVL2w'
+        }
+    },
+
+    'Luke \'DJ L-Mac\' MacPherson': {
+        'bio': 'In the midst of rural Somerset, situated amongst fields of wheat and mellow orchards, located in \
+            an unknown burrow: a solitary sound nourishes the silent air. What can be heard are the drums and bass \
+            that is L-Mac. Luke started DJing when he was 18 along with his home friends. He got involved with the \
+            society through attending open decs sessions last year. His passion to grow an expressive underground \
+            scene in Durham and support those DJs in a similar pursuit led him to apply for an executive position. \
+            He employs his whacky personality and unique energy to the role of social secretary. He believes DJs \
+            are at their best when given the opportunity to socialise and bond amongst one another. Featuring at \
+            Fabs, Fractal, college events, house parties, fashion shows and balls, Luke’s career so far so been \
+            somewhat diversified. It has helped him gain universal multi-genre experience and built his ability to \
+            bond with varying crowds – it was tested last year at socially distanced events.  Every set he plans he \
+            aims to please the client yet offer them a taster of something different. Whether that be a unique pop \
+            remix, jazzy drums or classically composed techno – you can never be quite sure what L-Mac will pull \
+            out from his sleeve…',
+        'img': 'assets/djimg/Luke.jpg',
+        'genres': [
+            'drum and bass',
+            'techno',
+            'house'
+        ],
+        'music': [
         ],
         'socials': {
             'youtube': 'channel/UCGg8wPWv_9KUqYDdynRVL2w'
