@@ -10,78 +10,56 @@ body {
   background-size: cover;
   margin: 0px;
   color: #ffffff;
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
 }
 
 #navbar {
   background-color: #181818;
-  -webkit-box-shadow: 0px 0px 20px -5px #000000;
-          box-shadow: 0px 0px 20px -5px #000000;
+  box-shadow: 0px 0px 20px -5px #000000;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 20;
 }
-
 #navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
 }
-
 #navbar .container #navbar-brand {
   height: 120px;
-  -webkit-transition: height ease 0.4s;
   transition: height ease 0.4s;
   border-radius: 50%;
 }
-
 #navbar .container ul {
   margin: 0;
   font-size: 18px;
 }
-
 #navbar .container ul li {
   display: inline;
 }
-
 #navbar .container ul li.active {
   font-weight: bold;
 }
-
 #navbar .container ul li:not(:first-child) {
   margin-left: 20px;
 }
-
 #navbar .container ul li a {
   color: #ffffff;
 }
 
 h1, h2 {
-  font-family: 'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
   font-style: italic;
 }
 
 #header-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 300px;
 }
-
 #header-content h1 {
   font-size: 80px;
   text-align: center;
@@ -93,11 +71,9 @@ h1, h2 {
   text-align: justify;
   margin-bottom: 100px;
 }
-
 .page-content p {
   margin: 5px 0;
 }
-
 .page-content a {
   font-weight: bold;
   color: #ffffff;
@@ -116,61 +92,51 @@ footer {
   background-color: #222222;
   padding: 1% 0px;
 }
-
 footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 footer .container #footer-notice {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 footer .container #footer-socials {
   font-size: 20px;
 }
-
 footer .container #footer-socials a {
   color: #ffffff;
 }
-
 footer .container #footer-socials a:hover {
   color: #dddddd;
 }
-
 footer .container #footer-socials a:not(:last-child) {
   margin-right: 5px;
 }
 
 @media (max-width: 767.9px) {
   #navbar #navbar-brand {
-    -webkit-transition: none;
     transition: none;
     height: 80px !important;
   }
+
   body {
     font-size: 14px;
   }
+
   #header-content {
     height: 300px !important;
   }
   #header-content h1 {
     font-size: 60px;
   }
+
   h2 {
     font-size: 30px;
   }
+
   h3 {
     font-size: 22px;
   }
 }
-
 #header-content {
   height: 400px;
 }
@@ -180,24 +146,16 @@ footer .container #footer-socials a:not(:last-child) {
   background-color: rgba(10, 10, 10, 0.6);
   text-align: justify;
 }
-
 #society-intro a {
   font-weight: bold;
   color: #ffffff;
 }
 
 #filter-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
 }
-
 #filter-cont #genre-filter {
   padding: 5px;
   border: none;
@@ -214,7 +172,6 @@ footer .container #footer-socials a:not(:last-child) {
   padding-bottom: 60px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
 #dj-list h2 {
   margin: 0px;
 }
@@ -225,18 +182,15 @@ footer .container #footer-socials a:not(:last-child) {
   border-radius: 5px;
   color: #dddddd;
 }
-
 .dj-card > .row {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
 .dj-card .genre-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 .dj-card .genre-list li {
   display: block;
   float: left;
@@ -249,44 +203,32 @@ footer .container #footer-socials a:not(:last-child) {
   margin-bottom: 10px;
   cursor: pointer;
 }
-
 .dj-card .genre-list li:hover {
   color: #ffffff;
 }
-
 .dj-card .genre-list .genre-selected {
   background-color: #333333;
   color: #ffffff;
 }
-
 .dj-card .content-row {
   height: 100%;
 }
-
 .dj-card .dj-bio {
   text-align: justify;
 }
-
 .dj-card .music-expand {
   position: relative;
   width: 100%;
   max-width: 50px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
+  transform: translateY(-50%) translateX(-50%);
+  transform-origin: center center;
   transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   cursor: pointer;
 }
-
 .dj-card .dj-img svg {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   width: 100%;
   height: 0;
   background-size: cover;
@@ -294,38 +236,30 @@ footer .container #footer-socials a:not(:last-child) {
   background-position: center center;
   padding-bottom: 75%;
 }
-
 .dj-card .dj-music-container {
   overflow: hidden;
 }
-
 .dj-card .dj-music-container .dj-music {
   margin-top: -100%;
-  -webkit-transition: margin-top ease 0.5s;
   transition: margin-top ease 0.5s;
 }
-
 .dj-card .dj-music-container .dj-music iframe {
   margin-bottom: 8px;
   width: 100%;
   border-radius: 5px;
   background-color: #333333;
 }
-
 .dj-card .social-container {
   position: absolute;
   top: 0;
   right: 0;
 }
-
 .dj-card .social-container a {
   font-size: 20px;
   color: #ffffff;
   margin-right: 10px;
-  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
-
 .dj-card .social-container a:hover {
   color: #aaaaaa;
 }
@@ -334,8 +268,8 @@ footer .container #footer-socials a:not(:last-child) {
   .content-row {
     padding-top: 15px;
   }
+
   .genre-list li {
     font-size: 14px;
   }
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
