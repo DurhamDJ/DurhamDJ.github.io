@@ -147,5 +147,5 @@ footer .container #footer-socials a:not(:last-child) {
 }
 
 a {
-  color: #aaaaaa !important;
+  text-decoration: underline;
 }/*# sourceMappingURL=rental.css.map */
