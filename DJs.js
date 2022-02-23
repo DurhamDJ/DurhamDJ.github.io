@@ -21,9 +21,9 @@ let djs = {
             ['youtube', 'LBnAGz0TIIw', '480']
         ],
         'socials': {
-            'facebook': 'aidsmckenzie​',
-            'soundcloud': 'aidsmckenzie​',
-            'mixcloud': 'aidsmckenzie​'
+            'facebook': 'aidsmckenzie',
+            'soundcloud': 'aidsmckenzie',
+            'mixcloud': 'aidsmckenzie'
         }
     },
     
@@ -133,19 +133,22 @@ let djs = {
             scene in Durham and support those DJs in a similar pursuit led him to apply for an executive position. \
             He employs his whacky personality and unique energy to the role of social secretary. He believes DJs \
             are at their best when given the opportunity to socialise and bond amongst one another. Featuring at \
-            Fabs, Fractal, college events, house parties, fashion shows and balls, Luke’s career so far so been \
+            Fabs, Fractal, college events, house parties, fashion shows and balls, Luke\'s career so far so been \
             somewhat diversified. It has helped him gain universal multi-genre experience and built his ability to \
-            bond with varying crowds – it was tested last year at socially distanced events.  Every set he plans he \
+            bond with varying crowds - it was tested last year at socially distanced events.  Every set he plans he \
             aims to please the client yet offer them a taster of something different. Whether that be a unique pop \
-            remix, jazzy drums or classically composed techno – you can never be quite sure what L-Mac will pull \
+            remix, jazzy drums or classically composed techno - you can never be quite sure what L-Mac will pull \
             out from his sleeve…',
         'img': 'assets/djimg/Luke.jpg',
         'genres': [
             'drum and bass',
+            'jungle',
             'techno',
             'house'
         ],
         'music': [
+            ['mixcloud', '/luko18/prep-for-newcastle/'],
+            ['mixcloud', '/luko18/rec-2021-12-07/']
         ],
         'socials': {
             'youtube': 'channel/UCGg8wPWv_9KUqYDdynRVL2w'
