@@ -50,7 +50,7 @@ let djs = {
     'Barnaby Collins': {
         'bio': 'Barnaby\'s reputation precedes him in the Durham DJ scene thanks to his clean mixes, \
                 high energy and varied music selection. In 2020, he could often be found streaming sets on a \
-                number of different channels, but as Durham reopens in 2021 he is keen to resume bringing his \
+                number of different channels, but as Durham reopens in 2021-22 he is keen to resume bringing his \
                 signature creativity, passion and experimentalism to nights of all sizes.',
         'img': 'assets/djimg/Barnaby.jpg',
         'genres': [
