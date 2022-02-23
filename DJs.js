@@ -151,7 +151,6 @@ let djs = {
             ['mixcloud', '/luko18/rec-2021-12-07/']
         ],
         'socials': {
-            'youtube': 'channel/UCGg8wPWv_9KUqYDdynRVL2w'
         }
     }
 };
