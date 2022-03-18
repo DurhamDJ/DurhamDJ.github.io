@@ -102,7 +102,7 @@ let djs = {
         ],
         'socials': {
             'facebook': 'merry.qvv',
-            'instagram': 'q.veevee'
+            'instagram': 'mer.aerqvv'
         }
     },
 
