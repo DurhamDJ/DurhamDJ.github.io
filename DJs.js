@@ -49,7 +49,7 @@ let djs = {
         }
     },
     'Tash Quinn \'Missy\'':{
-        'bio' : 'Tash lives happily in the 170 realm surrounded by beautiful liquid and heavy jungle (and bad jokes). She\' \
+        'bio' : 'Tash lives happily in the 170 realm surrounded by beautiful liquid and heavy jungle (and bad jokes). She\'s \
             a purist for drum and bass and you won\'t catch her mixing anything else. The self proclaimed lovechild of LSB and \
             Alex Perez blends soulful and dark liquid,  minimal rollers - and a noice bit of jungle.',
         'img': 'assets/djimg/Tash.jpg',
