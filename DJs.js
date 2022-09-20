@@ -4,7 +4,7 @@ let djs = {
     'Charles Pritchard': {
         'bio': 'Charles first came onto the Durham scene with a clubby house mix for Rotate, and has more \
                 recently performed a more underground mix at Univerzal, as well as making appearances on \
-                several DDJS livestreams throughout 2020. With his huge passion for house, he can comfortably \
+                several DDJS livestreams. With his huge passion for house, he can comfortably \
                 supply enough groovy minimal bangers to get anyone swaying on the dance floor.',
         'img': 'assets/djimg/Charles.jpg',
         'genres': [
@@ -24,7 +24,7 @@ let djs = {
         'bio': 'In the midst of rural Somerset, situated amongst fields of wheat and mellow orchards, located in \
             an unknown burrow: a solitary sound nourishes the silent air. What can be heard are the drums and bass \
             that is L-Mac. Luke started DJing when he was 18 along with his home friends. He got involved with the \
-            society through attending open decs sessions last year. His passion to grow an expressive underground \
+            society through attending open decs sessions in 2020. His passion to grow an expressive underground \
             scene in Durham and support those DJs in a similar pursuit led him to apply for an executive position. \
             He employs his whacky personality and unique energy to the role of social secretary. He believes DJs \
             are at their best when given the opportunity to socialise and bond amongst one another. Featuring at \
@@ -57,8 +57,8 @@ let djs = {
             'drum and bass', 
             'jungle']
         'music' : {
-        }
+        },
         'socials' : {
-        }
+        },
             
 };
