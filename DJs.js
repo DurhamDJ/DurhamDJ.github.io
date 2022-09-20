@@ -19,7 +19,7 @@ let djs = {
             'youtube': 'channel/UCGg8wPWv_9KUqYDdynRVL2w'
         }
     },
-
+        
     'Luke \'DJ L-Mac\' MacPherson': {
         'bio': 'In the midst of rural Somerset, situated amongst fields of wheat and mellow orchards, located in \
             an unknown burrow: a solitary sound nourishes the silent air. What can be heard are the drums and bass \
@@ -61,7 +61,7 @@ let djs = {
         }
         'socials' : {
         }
-    }
-    }
+    },
+}
            
 };
