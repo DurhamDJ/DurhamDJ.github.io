@@ -59,8 +59,8 @@ let djs = {
         ],
         'music' : [
         ],
-        'socials' : [
-        ]
+        'socials' : {
+        }
     },
 
            
