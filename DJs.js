@@ -1,5 +1,5 @@
 let djs = {
-    {
+    
 
     'Charles Pritchard': {
         'bio': 'Charles first came onto the Durham scene with a clubby house mix for Rotate, and has more \
@@ -62,6 +62,6 @@ let djs = {
         'socials' : {
         }
     },
-}
+
            
 };
