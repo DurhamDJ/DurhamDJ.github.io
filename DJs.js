@@ -58,7 +58,7 @@ let djs = {
             'jungle'
         ],
         'music' : {
-        }
+        },
         'socials' : {
         }
     },
