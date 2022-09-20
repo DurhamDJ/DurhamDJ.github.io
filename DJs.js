@@ -57,10 +57,10 @@ let djs = {
             'drum and bass', 
             'jungle'
         ],
-        'music' : {
-        },
-        'socials' : {
-        }
+        'music' : [
+        ],
+        'socials' : [
+        ]
     },
 
            
