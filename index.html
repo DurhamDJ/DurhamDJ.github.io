@@ -8,7 +8,7 @@
         <!-- THIS WORK IS LICENSED UNDER THE GPL 3.0 LICENSE BY DURHAM DJ SOCIETY. -->
         <!-- PLEASE SEE https://github.com/DurhamDJ/DurhamDJ.github.io/blob/master/LICENSE FOR MORE INFORMATION. -->
         
-        <style>@keyframes spinner{0%{transform:rotate(45deg)}100%{transform:rotate(225deg)}}@keyframes bar-slide{0%{transform:translateX(0)}100%{transform:translateX(-35px)}}#spinner{transform-origin:center 65%;animation:spinner .9s ease infinite}#bars{animation:bar-slide .9s ease infinite}#load-cover{position:fixed;background-color:#151515;top:0;left:0;bottom:0;right:0;display:flex;justify-content:center;align-items:center;transition:opacity 1s;z-index:40}.white-stroke{fill:transparent;stroke-width:10;stroke:#fff}.white-fill{fill:#fff}body{overflow-x:hidden}</style>
+        <style>@keyframes spinner{0%{transform:rotate(45deg)}100%{transform:rotate(225deg)}}@keyframes bar-slide{0%{transform:translateX(0)}100%{transform:translateX(-35px)}}#spinner{transform-origin:center 65%;animation:spinner .9s ease infinite}#bars{animation:bar-slide .9s ease infinite}#load-cover{position:fixed;background-color:#151515;top:0;left:0;bottom:0;right:0;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity 1s;z-index:40}.white-stroke{fill:transparent;stroke-width:10;stroke:#fff}#error-text{display:none;max-width:80%;background:#ff0000;padding:10px}.white-fill{fill:#fff}body{overflow-x:hidden}</style>
 
         <!-- Metadata incoming -->
         <link rel="canonical" href="https://ddjs.uk">
@@ -68,6 +68,20 @@
     </head>
     <body>
         <div id="load-cover">
+            <div id="error-text">
+                <p>Hello, and good job on taking on the development of this website!</p>
+                <p>
+                    If you're seeing this, you've probably encountered an error.
+                    Check DJs.js to make sure you're not missing any commas or
+                    brackets! A message saying 'djs is not defined' just means
+                    that something went wrong when reading the DJs.js file, so
+                    look for other errors for more information on where the
+                    error actually is.
+                </p>
+                <p>
+                    More information:
+                </p>
+            </div>
             <svg width="320" height="400" class="cdj-spinner">
                 <!-- masks -->
                 <defs>
@@ -184,6 +198,8 @@
         </div>
 
         <!-- JS code -->
+        <script src="assets/homeErrorHandler.js"></script>
+        <script>window.onerror=handleError</script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
