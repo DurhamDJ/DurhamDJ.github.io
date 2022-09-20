@@ -55,7 +55,8 @@ let djs = {
         'img': 'assets/djimg/Tash.jpg',
         'genres' : [
             'drum and bass', 
-            'jungle'],
+            'jungle'
+        ],
         'music' : {
         },
         'socials' : {
