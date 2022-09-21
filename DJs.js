@@ -70,7 +70,7 @@ let djs = {
             'drum and bass',
             'UK garage', 
             'house'],
-        'music' : [
+        'music' : ['soundcloud', '/ibftT'
              ],
         'socials' : {
          }
