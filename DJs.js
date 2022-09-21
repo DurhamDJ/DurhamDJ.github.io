@@ -70,9 +70,9 @@ let djs = {
             'drum and bass',
             'UK garage', 
             'house'],
-         'music' : [
+        'music' : [
              ],
-         'socials' : {
+        'socials' : {
          }
     }
         
