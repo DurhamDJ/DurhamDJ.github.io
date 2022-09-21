@@ -72,7 +72,7 @@ let djs = {
             'house'],
         'music' : [
              ],
-        'socials' : {'soundcloud': 'https://on.soundcloud.com/ibftT'
+        'socials' : {'on.soundcloud': 'https://on.soundcloud.com/ibftT'
          }
     }
         
