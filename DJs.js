@@ -65,7 +65,7 @@ let djs = {
         'bio':'Hailing from the southwest Theo brings a USB filled with a diverse variety of music to the decks, from thumping \
             rollers to groovy tech house tunes and everything in between. Taking inspiration from the likes of Ben Hemsley, \
             BAKEY and Eli Brown; Theo is sure to the bring the energy.',
-        'img': 'assets/djimg/Theo.jpg',
+        'img': 'assets/djimg/theo.jpg',
         'genres' : [
             'drum and bass',
             'UK garage', 
