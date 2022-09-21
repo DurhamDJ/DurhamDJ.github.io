@@ -70,9 +70,9 @@ let djs = {
             'drum and bass',
             'UK garage', 
             'house'],
-        'music' : ['soundcloud', '/ibftT'
+        'music' : [
              ],
-        'socials' : {
+        'socials' : {'https://on.soundcloud.com/ibftT'
          }
     }
         
