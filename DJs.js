@@ -72,7 +72,7 @@ let djs = {
             'house'],
         'music' : [
              ],
-        'socials' : {'soundcloud': 'on.soundcloud.com/ibftT'
+        'socials' : {'soundcloud': 'soundcloud.com/tm-media?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing'
          }
     }
         
