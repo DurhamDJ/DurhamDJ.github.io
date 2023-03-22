@@ -36,6 +36,7 @@ let djs = {
         'img': 'assets/djimg/Luke.jpg',
         'genres': [
             'drum and bass',
+            'hardcore',
             'jungle',
             'techno',
             'house'
